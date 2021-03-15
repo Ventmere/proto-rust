@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["proto_rust"] = [{"text":"impl From&lt;HoldKind&gt; for i32","synthetic":false,"types":[]},{"text":"impl From&lt;FbaSupplyType&gt; for i32","synthetic":false,"types":[]},{"text":"impl From&lt;InventoryKind&gt; for i32","synthetic":false,"types":[]},{"text":"impl From&lt;ProductStatus&gt; for i32","synthetic":false,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

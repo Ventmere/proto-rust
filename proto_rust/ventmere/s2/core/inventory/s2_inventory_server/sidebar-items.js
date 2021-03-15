@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["S2InventoryServer",""]],"trait":[["S2Inventory","Generated trait containing gRPC methods that should be implemented for use with S2InventoryServer."]]});

@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["proto_rust"] = [{"text":"impl Copy for HoldKind","synthetic":false,"types":[]},{"text":"impl Copy for FbaSupplyType","synthetic":false,"types":[]},{"text":"impl Copy for InventoryKind","synthetic":false,"types":[]},{"text":"impl Copy for ProductStatus","synthetic":false,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["brand",""],["inbound_shipment",""],["inventory",""],["product",""]]});

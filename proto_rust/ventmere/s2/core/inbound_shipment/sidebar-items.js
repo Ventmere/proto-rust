@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["s2_inbound_shipment_client","Generated client implementations."],["s2_inbound_shipment_server","Generated server implementations."]],"struct":[["GetAllOpenShipmentChannelIdsReply",""],["GetAllOpenShipmentChannelIdsRequest",""]]});

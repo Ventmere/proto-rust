@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["proto_rust"] = [{"text":"impl PartialOrd&lt;HoldKind&gt; for HoldKind","synthetic":false,"types":[]},{"text":"impl PartialOrd&lt;FbaSupplyType&gt; for FbaSupplyType","synthetic":false,"types":[]},{"text":"impl PartialOrd&lt;InventoryKind&gt; for InventoryKind","synthetic":false,"types":[]},{"text":"impl PartialOrd&lt;ProductStatus&gt; for ProductStatus","synthetic":false,"types":[]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
