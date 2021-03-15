@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["s2",""]]});
+initSidebarItems({"mod":[["s2",""],["sync",""]]});

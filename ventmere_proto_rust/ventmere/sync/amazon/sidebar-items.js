@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["s2_sync_amazon_client","Generated client implementations."],["s2_sync_amazon_server","Generated server implementations."]],"struct":[["AsinProductHint",""],["UpdateAsinProductHintRequest",""]]});

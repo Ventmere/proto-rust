@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["ventmere",""]]});
+initSidebarItems({"mod":[["ventmere",""]],"struct":[["Channel","A default batteries included `transport` channel."],["Endpoint","Channel builder."],["Error","The `Error` type, a wrapper around a dynamic error type."]],"type":[["Result","`Result<T, Error>`"]]});
