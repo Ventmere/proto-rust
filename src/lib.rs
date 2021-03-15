@@ -1,6 +1,12 @@
+pub use anyhow::{Error, Result};
+pub use tonic::transport::{Channel, Endpoint};
+
 pub mod ventmere {
     pub mod s2 {
         pub mod core {
+            use anyhow::Result;
+            use tonic::transport::{Channel, Endpoint};
+
             pub mod brand {
                 tonic::include_proto!("ventmere.s2.core.brand");
             }
@@ -15,6 +21,60 @@ pub mod ventmere {
 
             pub mod product {
                 tonic::include_proto!("ventmere.s2.core.product");
+            }
+
+            #[cfg(feature = "client")]
+            pub mod client {
+                use super::*;
+                #[derive(Clone)]
+                pub struct S2CoreGrpcClient {
+                    pub product: product::s2_product_client::S2ProductClient<Channel>,
+                    pub inbound_shipment:
+                        inbound_shipment::s2_inbound_shipment_client::S2InboundShipmentClient<
+                            Channel,
+                        >,
+                    pub inventory: inventory::s2_inventory_client::S2InventoryClient<Channel>,
+                }
+
+                impl S2CoreGrpcClient {
+                    pub async fn connect(uri: &str) -> Result<Self> {
+                        let channel = Endpoint::from_shared(uri.to_string())?.connect().await?;
+                        Ok(S2CoreGrpcClient {
+                        product: product::s2_product_client::S2ProductClient::new(channel.clone()),
+                        inbound_shipment: inbound_shipment::s2_inbound_shipment_client::S2InboundShipmentClient::new(
+                            channel.clone(),
+                        ),
+                        inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
+                    })
+                    }
+                }
+            }
+        }
+    }
+
+    pub mod sync {
+
+        pub mod amazon {
+            tonic::include_proto!("amazon");
+        }
+
+        #[cfg(feature = "client")]
+        pub mod client {
+            use super::*;
+            use crate::*;
+
+            #[derive(Clone)]
+            pub struct S2SyncGrpcClient {
+                pub amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient<Channel>,
+            }
+
+            impl S2SyncGrpcClient {
+                pub async fn connect(uri: &str) -> Result<Self> {
+                    let channel = Endpoint::from_shared(uri.to_string())?.connect().await?;
+                    Ok(S2SyncGrpcClient {
+                        amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel),
+                    })
+                }
             }
         }
     }
