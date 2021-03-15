@@ -1,3 +1,3 @@
 (function() {var implementors = {};
-implementors["proto_rust"] = [{"text":"impl StructuralEq for HoldKind","synthetic":false,"types":[]},{"text":"impl StructuralEq for FbaSupplyType","synthetic":false,"types":[]},{"text":"impl StructuralEq for InventoryKind","synthetic":false,"types":[]},{"text":"impl StructuralEq for ProductStatus","synthetic":false,"types":[]}];
+implementors["ventmere_proto_rust"] = [{"text":"impl StructuralEq for HoldKind","synthetic":false,"types":[]},{"text":"impl StructuralEq for FbaSupplyType","synthetic":false,"types":[]},{"text":"impl StructuralEq for InventoryKind","synthetic":false,"types":[]},{"text":"impl StructuralEq for ProductStatus","synthetic":false,"types":[]}];
 if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
