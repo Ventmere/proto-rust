@@ -50,30 +50,30 @@ pub mod ventmere {
                 }
             }
         }
-    }
 
-    pub mod sync {
+        pub mod sync {
 
-        pub mod amazon {
-            tonic::include_proto!("amazon");
-        }
-
-        #[cfg(feature = "client")]
-        pub mod client {
-            use super::*;
-            use crate::*;
-
-            #[derive(Clone)]
-            pub struct S2SyncGrpcClient {
-                pub amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient<Channel>,
+            pub mod amazon {
+                tonic::include_proto!("ventmere.s2.sync.amazon");
             }
 
-            impl S2SyncGrpcClient {
-                pub async fn connect(uri: &str) -> Result<Self> {
-                    let channel = Endpoint::from_shared(uri.to_string())?.connect().await?;
-                    Ok(S2SyncGrpcClient {
-                        amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel),
-                    })
+            #[cfg(feature = "client")]
+            pub mod client {
+                use super::*;
+                use crate::*;
+
+                #[derive(Clone)]
+                pub struct S2SyncGrpcClient {
+                    pub amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient<Channel>,
+                }
+
+                impl S2SyncGrpcClient {
+                    pub async fn connect(uri: &str) -> Result<Self> {
+                        let channel = Endpoint::from_shared(uri.to_string())?.connect().await?;
+                        Ok(S2SyncGrpcClient {
+                            amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel),
+                        })
+                    }
                 }
             }
         }
