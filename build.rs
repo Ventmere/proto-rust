@@ -1,6 +1,6 @@
 use std::path::Path;
 use std::path::PathBuf;
-use walkdir::WalkDir;
+use walkdir::{DirEntry, WalkDir};
 
 #[derive(Debug)]
 struct Package {
@@ -37,17 +37,15 @@ fn main() {
     let base = Path::new("./proto");
 
     let dir = WalkDir::new("./proto");
-    let entries = dir.into_iter().collect::<Result<Vec<_>, _>>().unwrap();
+    let entries = dir
+        .into_iter()
+        .filter_entry(|e| !is_hidden(e))
+        .collect::<Result<Vec<_>, _>>()
+        .unwrap();
     let packages: Vec<_> = entries
         .into_iter()
         .filter_map(|entry| {
-            if entry.file_type().is_file()
-                && !entry
-                    .path()
-                    .file_name()
-                    .and_then(|name| name.to_str().map(|name| name.starts_with(".")))
-                    .unwrap_or(false)
-            {
+            if entry.file_type().is_file() {
                 Some(Package::from_path(base, entry.into_path()))
             } else {
                 None
@@ -70,4 +68,12 @@ fn main() {
 
     let paths: Vec<_> = packages.iter().map(|p| p.path.as_ref()).collect();
     builder.compile(&paths, &[Path::new("./proto")]).unwrap();
+}
+
+fn is_hidden(entry: &DirEntry) -> bool {
+    entry
+        .file_name()
+        .to_str()
+        .map(|s| s.starts_with("."))
+        .unwrap_or(false)
 }
