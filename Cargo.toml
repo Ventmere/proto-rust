@@ -1,0 +1,19 @@
+[package]
+name = "proto-rust"
+version = "0.1.0"
+authors = ["Flux Xu <fluxxu@gmail.com>"]
+edition = "2018"
+
+[features]
+default = ["client", "server"]
+client = []
+server = []
+
+[dependencies]
+prost = "0.7"
+prost-types = "0.7"
+tonic = "0.4"
+
+[build-dependencies]
+tonic-build = { version = "0.4", features = ["prost"] }
+walkdir = "2"
