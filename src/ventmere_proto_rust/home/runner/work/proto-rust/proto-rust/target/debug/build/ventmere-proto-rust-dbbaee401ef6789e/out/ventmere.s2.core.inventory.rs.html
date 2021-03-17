@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `/home/runner/work/proto-rust/proto-rust/target/debug/build/ventmere-proto-rust-e44217c0f65f645e/out/ventmere.s2.core.inventory.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>ventmere.s2.core.inventory.rs - source</title><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../light.css"  id="themeStyle"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../dark.css" disabled ><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../ayu.css" disabled ><script id="default-settings"></script><script src="../../../../../../../../../../../../storage.js"></script><noscript><link rel="stylesheet" href="../../../../../../../../../../../../noscript.css"></noscript><link rel="icon" type="image/svg+xml" href="../../../../../../../../../../../../favicon.svg">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `/home/runner/work/proto-rust/proto-rust/target/debug/build/ventmere-proto-rust-dbbaee401ef6789e/out/ventmere.s2.core.inventory.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>ventmere.s2.core.inventory.rs - source</title><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../light.css"  id="themeStyle"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../dark.css" disabled ><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../ayu.css" disabled ><script id="default-settings"></script><script src="../../../../../../../../../../../../storage.js"></script><noscript><link rel="stylesheet" href="../../../../../../../../../../../../noscript.css"></noscript><link rel="icon" type="image/svg+xml" href="../../../../../../../../../../../../favicon.svg">
 <link rel="alternate icon" type="image/png" href="../../../../../../../../../../../../favicon-16x16.png">
 <link rel="alternate icon" type="image/png" href="../../../../../../../../../../../../favicon-32x32.png"><style type="text/css">#crate-search{background-image:url("../../../../../../../../../../../../down-arrow.svg");}</style></head><body class="rustdoc source"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../../../../../../../../../../../ventmere_proto_rust/index.html'><div class='logo-container rust-logo'><img src='../../../../../../../../../../../../rust-logo.png' alt='logo'></div></a></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!" aria-haspopup="menu"><img src="../../../../../../../../../../../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices" role="menu"></div></div><script src="../../../../../../../../../../../../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><button type="button" class="help-button">?</button>
                 <a id="settings-menu" href="../../../../../../../../../../../../settings.html"><img src="../../../../../../../../../../../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><pre class="line-numbers"><span id="1">  1</span>
@@ -563,6 +563,60 @@
 <span id="560">560</span>
 <span id="561">561</span>
 <span id="562">562</span>
+<span id="563">563</span>
+<span id="564">564</span>
+<span id="565">565</span>
+<span id="566">566</span>
+<span id="567">567</span>
+<span id="568">568</span>
+<span id="569">569</span>
+<span id="570">570</span>
+<span id="571">571</span>
+<span id="572">572</span>
+<span id="573">573</span>
+<span id="574">574</span>
+<span id="575">575</span>
+<span id="576">576</span>
+<span id="577">577</span>
+<span id="578">578</span>
+<span id="579">579</span>
+<span id="580">580</span>
+<span id="581">581</span>
+<span id="582">582</span>
+<span id="583">583</span>
+<span id="584">584</span>
+<span id="585">585</span>
+<span id="586">586</span>
+<span id="587">587</span>
+<span id="588">588</span>
+<span id="589">589</span>
+<span id="590">590</span>
+<span id="591">591</span>
+<span id="592">592</span>
+<span id="593">593</span>
+<span id="594">594</span>
+<span id="595">595</span>
+<span id="596">596</span>
+<span id="597">597</span>
+<span id="598">598</span>
+<span id="599">599</span>
+<span id="600">600</span>
+<span id="601">601</span>
+<span id="602">602</span>
+<span id="603">603</span>
+<span id="604">604</span>
+<span id="605">605</span>
+<span id="606">606</span>
+<span id="607">607</span>
+<span id="608">608</span>
+<span id="609">609</span>
+<span id="610">610</span>
+<span id="611">611</span>
+<span id="612">612</span>
+<span id="613">613</span>
+<span id="614">614</span>
+<span id="615">615</span>
+<span id="616">616</span>
 </pre><div class="example-wrap"><pre class="rust ">
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, ::<span class="ident">prost</span>::<span class="ident">Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">QueryWarehouseEventsSumRequest</span> {
@@ -764,6 +818,11 @@
     <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;4&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">warehouse_id</span>: ::<span class="ident">prost</span>::<span class="ident">alloc</span>::<span class="ident">string</span>::<span class="ident">String</span>,
 }
+<span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, ::<span class="ident">prost</span>::<span class="ident">Message</span>)]</span>
+<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">GetInventoryWarehousesReply</span> {
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="kw">pub</span> <span class="ident">warehouses</span>: ::<span class="ident">prost</span>::<span class="ident">alloc</span>::<span class="ident">vec</span>::<span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">InventoryWarehouse</span><span class="op">&gt;</span>,
+}
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Debug</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>, <span class="ident">Hash</span>, <span class="ident">PartialOrd</span>, <span class="ident">Ord</span>, ::<span class="ident">prost</span>::<span class="ident">Enumeration</span>)]</span>
 <span class="attribute">#[<span class="ident">repr</span>(<span class="ident">i32</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">HoldKind</span> {
@@ -884,6 +943,22 @@
             );
             <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">unary</span>(<span class="ident">request</span>.<span class="ident">into_request</span>(), <span class="ident">path</span>, <span class="ident">codec</span>).<span class="kw">await</span>
         }
+        <span class="kw">pub</span> <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">get_inventory_warehouses</span>(
+            <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>,
+            <span class="ident">request</span>: <span class="kw">impl</span> <span class="ident">tonic</span>::<span class="ident">IntoRequest</span><span class="op">&lt;</span>()<span class="op">&gt;</span>,
+        ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic</span>::<span class="ident">Response</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">GetInventoryWarehousesReply</span><span class="op">&gt;</span>, <span class="ident">tonic</span>::<span class="ident">Status</span><span class="op">&gt;</span> {
+            <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">ready</span>().<span class="kw">await</span>.<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
+                <span class="ident">tonic</span>::<span class="ident">Status</span>::<span class="ident">new</span>(
+                    <span class="ident">tonic</span>::<span class="ident">Code</span>::<span class="ident">Unknown</span>,
+                    <span class="macro">format</span><span class="macro">!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
+                )
+            })<span class="question-mark">?</span>;
+            <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic</span>::<span class="ident">codec</span>::<span class="ident">ProstCodec</span>::<span class="ident">default</span>();
+            <span class="kw">let</span> <span class="ident">path</span> <span class="op">=</span> <span class="ident">http</span>::<span class="ident">uri</span>::<span class="ident">PathAndQuery</span>::<span class="ident">from_static</span>(
+                <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/GetInventoryWarehouses&quot;</span>,
+            );
+            <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">unary</span>(<span class="ident">request</span>.<span class="ident">into_request</span>(), <span class="ident">path</span>, <span class="ident">codec</span>).<span class="kw">await</span>
+        }
     }
     <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">Clone</span><span class="op">&gt;</span> <span class="ident">Clone</span> <span class="kw">for</span> <span class="ident">S2InventoryClient</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
         <span class="kw">fn</span> <span class="ident">clone</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
@@ -921,6 +996,10 @@
             <span class="kw-2">&amp;</span><span class="self">self</span>,
             <span class="ident">request</span>: <span class="ident">tonic</span>::<span class="ident">Request</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">QueryWarehouseEventsSumRequest</span><span class="op">&gt;</span>,
         ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic</span>::<span class="ident">Response</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">QueryWarehouseEventsSumReply</span><span class="op">&gt;</span>, <span class="ident">tonic</span>::<span class="ident">Status</span><span class="op">&gt;</span>;
+        <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">get_inventory_warehouses</span>(
+            <span class="kw-2">&amp;</span><span class="self">self</span>,
+            <span class="ident">request</span>: <span class="ident">tonic</span>::<span class="ident">Request</span><span class="op">&lt;</span>()<span class="op">&gt;</span>,
+        ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic</span>::<span class="ident">Response</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">GetInventoryWarehousesReply</span><span class="op">&gt;</span>, <span class="ident">tonic</span>::<span class="ident">Status</span><span class="op">&gt;</span>;
     }
     <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>)]</span>
     <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">S2InventoryServer</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span> {
@@ -1084,6 +1163,35 @@
                         <span class="kw">let</span> <span class="ident">interceptor</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">1</span>.<span class="ident">clone</span>();
                         <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">0</span>;
                         <span class="kw">let</span> <span class="ident">method</span> <span class="op">=</span> <span class="ident">QueryWarehouseEventsSumSvc</span>(<span class="ident">inner</span>);
+                        <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic</span>::<span class="ident">codec</span>::<span class="ident">ProstCodec</span>::<span class="ident">default</span>();
+                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="kw">if</span> <span class="kw">let</span> <span class="prelude-val">Some</span>(<span class="ident">interceptor</span>) <span class="op">=</span> <span class="ident">interceptor</span> {
+                            <span class="ident">tonic</span>::<span class="ident">server</span>::<span class="ident">Grpc</span>::<span class="ident">with_interceptor</span>(<span class="ident">codec</span>, <span class="ident">interceptor</span>)
+                        } <span class="kw">else</span> {
+                            <span class="ident">tonic</span>::<span class="ident">server</span>::<span class="ident">Grpc</span>::<span class="ident">new</span>(<span class="ident">codec</span>)
+                        };
+                        <span class="kw">let</span> <span class="ident">res</span> <span class="op">=</span> <span class="ident">grpc</span>.<span class="ident">unary</span>(<span class="ident">method</span>, <span class="ident">req</span>).<span class="kw">await</span>;
+                        <span class="prelude-val">Ok</span>(<span class="ident">res</span>)
+                    };
+                    <span class="ident">Box</span>::<span class="ident">pin</span>(<span class="ident">fut</span>)
+                }
+                <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/GetInventoryWarehouses&quot;</span> <span class="op">=</span><span class="op">&gt;</span> {
+                    <span class="attribute">#[<span class="ident">allow</span>(<span class="ident">non_camel_case_types</span>)]</span>
+                    <span class="kw">struct</span> <span class="ident">GetInventoryWarehousesSvc</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>(<span class="kw">pub</span> <span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>);
+                    <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span> <span class="ident">tonic</span>::<span class="ident">server</span>::<span class="ident">UnaryService</span><span class="op">&lt;</span>()<span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">GetInventoryWarehousesSvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
+                        <span class="kw">type</span> <span class="ident">Response</span> <span class="op">=</span> <span class="kw">super</span>::<span class="ident">GetInventoryWarehousesReply</span>;
+                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span><span class="ident">tonic</span>::<span class="ident">Response</span><span class="op">&lt;</span><span class="self">Self</span>::<span class="ident">Response</span><span class="op">&gt;</span>, <span class="ident">tonic</span>::<span class="ident">Status</span><span class="op">&gt;</span>;
+                        <span class="kw">fn</span> <span class="ident">call</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">request</span>: <span class="ident">tonic</span>::<span class="ident">Request</span><span class="op">&lt;</span>()<span class="op">&gt;</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span>::<span class="ident">Future</span> {
+                            <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="number">0</span>.<span class="ident">clone</span>();
+                            <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span>
+                                <span class="kw">async</span> <span class="kw">move</span> { (<span class="kw-2">*</span><span class="ident">inner</span>).<span class="ident">get_inventory_warehouses</span>(<span class="ident">request</span>).<span class="kw">await</span> };
+                            <span class="ident">Box</span>::<span class="ident">pin</span>(<span class="ident">fut</span>)
+                        }
+                    }
+                    <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">clone</span>();
+                    <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span> <span class="kw">async</span> <span class="kw">move</span> {
+                        <span class="kw">let</span> <span class="ident">interceptor</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">1</span>.<span class="ident">clone</span>();
+                        <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">0</span>;
+                        <span class="kw">let</span> <span class="ident">method</span> <span class="op">=</span> <span class="ident">GetInventoryWarehousesSvc</span>(<span class="ident">inner</span>);
                         <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic</span>::<span class="ident">codec</span>::<span class="ident">ProstCodec</span>::<span class="ident">default</span>();
                         <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="kw">if</span> <span class="kw">let</span> <span class="prelude-val">Some</span>(<span class="ident">interceptor</span>) <span class="op">=</span> <span class="ident">interceptor</span> {
                             <span class="ident">tonic</span>::<span class="ident">server</span>::<span class="ident">Grpc</span>::<span class="ident">with_interceptor</span>(<span class="ident">codec</span>, <span class="ident">interceptor</span>)
