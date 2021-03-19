@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["amazon",""],["client",""]]});
+initSidebarItems({"mod":[["amazon",""],["client",""],["product_link",""]]});
