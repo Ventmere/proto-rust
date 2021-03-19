@@ -40,12 +40,22 @@ pub mod ventmere {
                     pub async fn connect(uri: &str) -> Result<Self> {
                         let channel = Endpoint::from_shared(uri.to_string())?.connect().await?;
                         Ok(S2CoreGrpcClient {
-                        product: product::s2_product_client::S2ProductClient::new(channel.clone()),
-                        inbound_shipment: inbound_shipment::s2_inbound_shipment_client::S2InboundShipmentClient::new(
-                            channel.clone(),
-                        ),
-                        inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
-                    })
+                            product: product::s2_product_client::S2ProductClient::new(channel.clone()),
+                            inbound_shipment: inbound_shipment::s2_inbound_shipment_client::S2InboundShipmentClient::new(
+                                channel.clone(),
+                            ),
+                            inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
+                        })
+                    }
+                    pub fn connect_lazy(uri: &str) -> Result<Self> {
+                        let channel = Endpoint::from_shared(uri.to_string())?.connect_lazy()?;
+                        Ok(S2CoreGrpcClient {
+                            product: product::s2_product_client::S2ProductClient::new(channel.clone()),
+                            inbound_shipment: inbound_shipment::s2_inbound_shipment_client::S2InboundShipmentClient::new(
+                                channel.clone(),
+                            ),
+                            inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
+                        })
                     }
                 }
             }
@@ -70,6 +80,13 @@ pub mod ventmere {
                 impl S2SyncGrpcClient {
                     pub async fn connect(uri: &str) -> Result<Self> {
                         let channel = Endpoint::from_shared(uri.to_string())?.connect().await?;
+                        Ok(S2SyncGrpcClient {
+                            amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel),
+                        })
+                    }
+
+                    pub fn connect_lazy(uri: &str) -> Result<Self> {
+                        let channel = Endpoint::from_shared(uri.to_string())?.connect_lazy()?;
                         Ok(S2SyncGrpcClient {
                             amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel),
                         })
