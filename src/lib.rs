@@ -62,6 +62,9 @@ pub mod ventmere {
         }
 
         pub mod sync {
+            pub mod product_link {
+                tonic::include_proto!("ventmere.s2.sync.product_link");
+            }
 
             pub mod amazon {
                 tonic::include_proto!("ventmere.s2.sync.amazon");
