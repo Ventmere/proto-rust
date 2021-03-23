@@ -62,6 +62,8 @@ pub mod ventmere {
         }
 
         pub mod sync {
+            use anyhow::Result;
+            use tonic::transport::{Channel, Endpoint};
             pub mod product_link {
                 tonic::include_proto!("ventmere.s2.sync.product_link");
             }
@@ -73,25 +75,34 @@ pub mod ventmere {
             #[cfg(feature = "client")]
             pub mod client {
                 use super::*;
-                use crate::*;
 
                 #[derive(Clone)]
                 pub struct S2SyncGrpcClient {
                     pub amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient<Channel>,
+                    pub product_link:
+                        product_link::s2_sync_product_link_client::S2SyncProductLinkClient<Channel>,
                 }
 
                 impl S2SyncGrpcClient {
                     pub async fn connect(uri: &str) -> Result<Self> {
                         let channel = Endpoint::from_shared(uri.to_string())?.connect().await?;
                         Ok(S2SyncGrpcClient {
-                            amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel),
+                            amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel.clone()),
+                            product_link:
+                                product_link::s2_sync_product_link_client::S2SyncProductLinkClient::new(
+                                    channel,
+                                ),
                         })
                     }
 
                     pub fn connect_lazy(uri: &str) -> Result<Self> {
                         let channel = Endpoint::from_shared(uri.to_string())?.connect_lazy()?;
                         Ok(S2SyncGrpcClient {
-                            amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel),
+                            amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel.clone()),
+                            product_link:
+                            product_link::s2_sync_product_link_client::S2SyncProductLinkClient::new(
+                                    channel,
+                                ),
                         })
                     }
                 }
