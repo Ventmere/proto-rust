@@ -269,6 +269,71 @@
 <span id="266">266</span>
 <span id="267">267</span>
 <span id="268">268</span>
+<span id="269">269</span>
+<span id="270">270</span>
+<span id="271">271</span>
+<span id="272">272</span>
+<span id="273">273</span>
+<span id="274">274</span>
+<span id="275">275</span>
+<span id="276">276</span>
+<span id="277">277</span>
+<span id="278">278</span>
+<span id="279">279</span>
+<span id="280">280</span>
+<span id="281">281</span>
+<span id="282">282</span>
+<span id="283">283</span>
+<span id="284">284</span>
+<span id="285">285</span>
+<span id="286">286</span>
+<span id="287">287</span>
+<span id="288">288</span>
+<span id="289">289</span>
+<span id="290">290</span>
+<span id="291">291</span>
+<span id="292">292</span>
+<span id="293">293</span>
+<span id="294">294</span>
+<span id="295">295</span>
+<span id="296">296</span>
+<span id="297">297</span>
+<span id="298">298</span>
+<span id="299">299</span>
+<span id="300">300</span>
+<span id="301">301</span>
+<span id="302">302</span>
+<span id="303">303</span>
+<span id="304">304</span>
+<span id="305">305</span>
+<span id="306">306</span>
+<span id="307">307</span>
+<span id="308">308</span>
+<span id="309">309</span>
+<span id="310">310</span>
+<span id="311">311</span>
+<span id="312">312</span>
+<span id="313">313</span>
+<span id="314">314</span>
+<span id="315">315</span>
+<span id="316">316</span>
+<span id="317">317</span>
+<span id="318">318</span>
+<span id="319">319</span>
+<span id="320">320</span>
+<span id="321">321</span>
+<span id="322">322</span>
+<span id="323">323</span>
+<span id="324">324</span>
+<span id="325">325</span>
+<span id="326">326</span>
+<span id="327">327</span>
+<span id="328">328</span>
+<span id="329">329</span>
+<span id="330">330</span>
+<span id="331">331</span>
+<span id="332">332</span>
+<span id="333">333</span>
 </pre><div class="example-wrap"><pre class="rust ">
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, ::<span class="ident">prost</span>::<span class="ident">Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">GetLinkedChannelIdsRequest</span> {
@@ -293,6 +358,20 @@
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">GetLinkedProductIdsReply</span> {
     <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">links</span>: ::<span class="ident">prost</span>::<span class="ident">alloc</span>::<span class="ident">vec</span>::<span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Link</span><span class="op">&gt;</span>,
+}
+<span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, ::<span class="ident">prost</span>::<span class="ident">Message</span>)]</span>
+<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">ListLinkedRequest</span> {
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="kw">pub</span> <span class="ident">scope</span>: ::<span class="ident">core</span>::<span class="ident">option</span>::<span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">LinkScope</span><span class="op">&gt;</span>,
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="kw">pub</span> <span class="ident">next_token</span>: ::<span class="ident">core</span>::<span class="ident">option</span>::<span class="prelude-ty">Option</span><span class="op">&lt;</span>::<span class="ident">prost</span>::<span class="ident">alloc</span>::<span class="ident">string</span>::<span class="ident">String</span><span class="op">&gt;</span>,
+}
+<span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, ::<span class="ident">prost</span>::<span class="ident">Message</span>)]</span>
+<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">ListLinkedReply</span> {
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="kw">pub</span> <span class="ident">links</span>: ::<span class="ident">prost</span>::<span class="ident">alloc</span>::<span class="ident">vec</span>::<span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Link</span><span class="op">&gt;</span>,
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="kw">pub</span> <span class="ident">next_token</span>: ::<span class="ident">core</span>::<span class="ident">option</span>::<span class="prelude-ty">Option</span><span class="op">&lt;</span>::<span class="ident">prost</span>::<span class="ident">alloc</span>::<span class="ident">string</span>::<span class="ident">String</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, ::<span class="ident">prost</span>::<span class="ident">Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">Link</span> {
@@ -343,7 +422,6 @@
             <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">tonic</span>::<span class="ident">client</span>::<span class="ident">Grpc</span>::<span class="ident">with_interceptor</span>(<span class="ident">inner</span>, <span class="ident">interceptor</span>);
             <span class="self">Self</span> { <span class="ident">inner</span> }
         }
-        <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot; Push ASIN -&gt; Product hint data&quot;</span>]</span>
         <span class="kw">pub</span> <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">get_linked_channel_ids</span>(
             <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>,
             <span class="ident">request</span>: <span class="kw">impl</span> <span class="ident">tonic</span>::<span class="ident">IntoRequest</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">GetLinkedChannelIdsRequest</span><span class="op">&gt;</span>,
@@ -376,6 +454,22 @@
             );
             <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">unary</span>(<span class="ident">request</span>.<span class="ident">into_request</span>(), <span class="ident">path</span>, <span class="ident">codec</span>).<span class="kw">await</span>
         }
+        <span class="kw">pub</span> <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">list_linked</span>(
+            <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>,
+            <span class="ident">request</span>: <span class="kw">impl</span> <span class="ident">tonic</span>::<span class="ident">IntoRequest</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">ListLinkedRequest</span><span class="op">&gt;</span>,
+        ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic</span>::<span class="ident">Response</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">ListLinkedReply</span><span class="op">&gt;</span>, <span class="ident">tonic</span>::<span class="ident">Status</span><span class="op">&gt;</span> {
+            <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">ready</span>().<span class="kw">await</span>.<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
+                <span class="ident">tonic</span>::<span class="ident">Status</span>::<span class="ident">new</span>(
+                    <span class="ident">tonic</span>::<span class="ident">Code</span>::<span class="ident">Unknown</span>,
+                    <span class="macro">format</span><span class="macro">!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
+                )
+            })<span class="question-mark">?</span>;
+            <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic</span>::<span class="ident">codec</span>::<span class="ident">ProstCodec</span>::<span class="ident">default</span>();
+            <span class="kw">let</span> <span class="ident">path</span> <span class="op">=</span> <span class="ident">http</span>::<span class="ident">uri</span>::<span class="ident">PathAndQuery</span>::<span class="ident">from_static</span>(
+                <span class="string">&quot;/ventmere.s2.sync.product_link.S2SyncProductLink/ListLinked&quot;</span>,
+            );
+            <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">unary</span>(<span class="ident">request</span>.<span class="ident">into_request</span>(), <span class="ident">path</span>, <span class="ident">codec</span>).<span class="kw">await</span>
+        }
     }
     <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">Clone</span><span class="op">&gt;</span> <span class="ident">Clone</span> <span class="kw">for</span> <span class="ident">S2SyncProductLinkClient</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
         <span class="kw">fn</span> <span class="ident">clone</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span> {
@@ -397,7 +491,6 @@
     <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Generated trait containing gRPC methods that should be implemented for use with S2SyncProductLinkServer.&quot;</span>]</span>
     <span class="attribute">#[<span class="ident">async_trait</span>]</span>
     <span class="kw">pub</span> <span class="kw">trait</span> <span class="ident">S2SyncProductLink</span>: <span class="ident">Send</span> <span class="op">+</span> <span class="ident">Sync</span> <span class="op">+</span> <span class="lifetime">&#39;static</span> {
-        <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot; Push ASIN -&gt; Product hint data&quot;</span>]</span>
         <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">get_linked_channel_ids</span>(
             <span class="kw-2">&amp;</span><span class="self">self</span>,
             <span class="ident">request</span>: <span class="ident">tonic</span>::<span class="ident">Request</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">GetLinkedChannelIdsRequest</span><span class="op">&gt;</span>,
@@ -406,6 +499,10 @@
             <span class="kw-2">&amp;</span><span class="self">self</span>,
             <span class="ident">request</span>: <span class="ident">tonic</span>::<span class="ident">Request</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">GetLinkedProductIdsRequest</span><span class="op">&gt;</span>,
         ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic</span>::<span class="ident">Response</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">GetLinkedProductIdsReply</span><span class="op">&gt;</span>, <span class="ident">tonic</span>::<span class="ident">Status</span><span class="op">&gt;</span>;
+        <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">list_linked</span>(
+            <span class="kw-2">&amp;</span><span class="self">self</span>,
+            <span class="ident">request</span>: <span class="ident">tonic</span>::<span class="ident">Request</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">ListLinkedRequest</span><span class="op">&gt;</span>,
+        ) <span class="op">-</span><span class="op">&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic</span>::<span class="ident">Response</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">ListLinkedReply</span><span class="op">&gt;</span>, <span class="ident">tonic</span>::<span class="ident">Status</span><span class="op">&gt;</span>;
     }
     <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>)]</span>
     <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">S2SyncProductLinkServer</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2SyncProductLink</span><span class="op">&gt;</span> {
@@ -496,6 +593,39 @@
                         <span class="kw">let</span> <span class="ident">interceptor</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">1</span>.<span class="ident">clone</span>();
                         <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">0</span>;
                         <span class="kw">let</span> <span class="ident">method</span> <span class="op">=</span> <span class="ident">GetLinkedProductIdsSvc</span>(<span class="ident">inner</span>);
+                        <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic</span>::<span class="ident">codec</span>::<span class="ident">ProstCodec</span>::<span class="ident">default</span>();
+                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="kw">if</span> <span class="kw">let</span> <span class="prelude-val">Some</span>(<span class="ident">interceptor</span>) <span class="op">=</span> <span class="ident">interceptor</span> {
+                            <span class="ident">tonic</span>::<span class="ident">server</span>::<span class="ident">Grpc</span>::<span class="ident">with_interceptor</span>(<span class="ident">codec</span>, <span class="ident">interceptor</span>)
+                        } <span class="kw">else</span> {
+                            <span class="ident">tonic</span>::<span class="ident">server</span>::<span class="ident">Grpc</span>::<span class="ident">new</span>(<span class="ident">codec</span>)
+                        };
+                        <span class="kw">let</span> <span class="ident">res</span> <span class="op">=</span> <span class="ident">grpc</span>.<span class="ident">unary</span>(<span class="ident">method</span>, <span class="ident">req</span>).<span class="kw">await</span>;
+                        <span class="prelude-val">Ok</span>(<span class="ident">res</span>)
+                    };
+                    <span class="ident">Box</span>::<span class="ident">pin</span>(<span class="ident">fut</span>)
+                }
+                <span class="string">&quot;/ventmere.s2.sync.product_link.S2SyncProductLink/ListLinked&quot;</span> <span class="op">=</span><span class="op">&gt;</span> {
+                    <span class="attribute">#[<span class="ident">allow</span>(<span class="ident">non_camel_case_types</span>)]</span>
+                    <span class="kw">struct</span> <span class="ident">ListLinkedSvc</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2SyncProductLink</span><span class="op">&gt;</span>(<span class="kw">pub</span> <span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>);
+                    <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2SyncProductLink</span><span class="op">&gt;</span> <span class="ident">tonic</span>::<span class="ident">server</span>::<span class="ident">UnaryService</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">ListLinkedRequest</span><span class="op">&gt;</span>
+                        <span class="kw">for</span> <span class="ident">ListLinkedSvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>
+                    {
+                        <span class="kw">type</span> <span class="ident">Response</span> <span class="op">=</span> <span class="kw">super</span>::<span class="ident">ListLinkedReply</span>;
+                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span><span class="ident">tonic</span>::<span class="ident">Response</span><span class="op">&lt;</span><span class="self">Self</span>::<span class="ident">Response</span><span class="op">&gt;</span>, <span class="ident">tonic</span>::<span class="ident">Status</span><span class="op">&gt;</span>;
+                        <span class="kw">fn</span> <span class="ident">call</span>(
+                            <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>,
+                            <span class="ident">request</span>: <span class="ident">tonic</span>::<span class="ident">Request</span><span class="op">&lt;</span><span class="kw">super</span>::<span class="ident">ListLinkedRequest</span><span class="op">&gt;</span>,
+                        ) <span class="op">-</span><span class="op">&gt;</span> <span class="self">Self</span>::<span class="ident">Future</span> {
+                            <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="number">0</span>.<span class="ident">clone</span>();
+                            <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span> <span class="kw">async</span> <span class="kw">move</span> { (<span class="kw-2">*</span><span class="ident">inner</span>).<span class="ident">list_linked</span>(<span class="ident">request</span>).<span class="kw">await</span> };
+                            <span class="ident">Box</span>::<span class="ident">pin</span>(<span class="ident">fut</span>)
+                        }
+                    }
+                    <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">clone</span>();
+                    <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span> <span class="kw">async</span> <span class="kw">move</span> {
+                        <span class="kw">let</span> <span class="ident">interceptor</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">1</span>.<span class="ident">clone</span>();
+                        <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">0</span>;
+                        <span class="kw">let</span> <span class="ident">method</span> <span class="op">=</span> <span class="ident">ListLinkedSvc</span>(<span class="ident">inner</span>);
                         <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic</span>::<span class="ident">codec</span>::<span class="ident">ProstCodec</span>::<span class="ident">default</span>();
                         <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="kw">if</span> <span class="kw">let</span> <span class="prelude-val">Some</span>(<span class="ident">interceptor</span>) <span class="op">=</span> <span class="ident">interceptor</span> {
                             <span class="ident">tonic</span>::<span class="ident">server</span>::<span class="ident">Grpc</span>::<span class="ident">with_interceptor</span>(<span class="ident">codec</span>, <span class="ident">interceptor</span>)
