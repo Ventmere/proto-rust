@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["brand",""],["client",""],["inbound_shipment",""],["inventory",""],["product",""]]});
+initSidebarItems({"mod":[["brand",""],["client",""],["inbound_shipment",""],["inventory",""],["order",""],["product",""]]});

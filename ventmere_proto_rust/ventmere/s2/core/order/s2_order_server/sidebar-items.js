@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["S2OrderServer",""]],"trait":[["S2Order","Generated trait containing gRPC methods that should be implemented for use with S2OrderServer."]]});
