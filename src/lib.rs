@@ -69,6 +69,10 @@ pub mod ventmere {
                 tonic::include_proto!("ventmere.s2.sync.amazon");
             }
 
+            pub mod shopify {
+                tonic::include_proto!("ventmere.s2.sync.shopify");
+            }
+
             #[cfg(feature = "client")]
             pub mod client {
                 use super::*;
@@ -78,6 +82,7 @@ pub mod ventmere {
                     pub amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient<Channel>,
                     pub product_link:
                         product_link::s2_sync_product_link_client::S2SyncProductLinkClient<Channel>,
+                    pub shopify: shopify::s2_sync_shopify_client::S2SyncShopifyClient<Channel>,
                 }
 
                 impl S2SyncGrpcClient {
@@ -87,8 +92,9 @@ pub mod ventmere {
                             amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel.clone()),
                             product_link:
                                 product_link::s2_sync_product_link_client::S2SyncProductLinkClient::new(
-                                    channel,
+                                    channel.clone(),
                                 ),
+                            shopify: shopify::s2_sync_shopify_client::S2SyncShopifyClient::new(channel.clone()),
                         })
                     }
                 }
