@@ -23,6 +23,10 @@ pub mod ventmere {
                 tonic::include_proto!("ventmere.s2.core.product");
             }
 
+            pub mod order {
+                tonic::include_proto!("ventmere.s2.core.order");
+            }
+
             #[cfg(feature = "client")]
             pub mod client {
                 use super::*;
@@ -30,10 +34,11 @@ pub mod ventmere {
                 pub struct S2CoreGrpcClient {
                     pub product: product::s2_product_client::S2ProductClient<Channel>,
                     pub inbound_shipment:
-                        inbound_shipment::s2_inbound_shipment_client::S2InboundShipmentClient<
-                            Channel,
-                        >,
+                    inbound_shipment::s2_inbound_shipment_client::S2InboundShipmentClient<
+                        Channel,
+                    >,
                     pub inventory: inventory::s2_inventory_client::S2InventoryClient<Channel>,
+                    pub order: order::s2_order_client::S2OrderClient<Channel>,
                 }
 
                 impl S2CoreGrpcClient {
@@ -45,8 +50,10 @@ pub mod ventmere {
                                 channel.clone(),
                             ),
                             inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
+                            order: order::s2_order_client::S2OrderClient::new(channel.clone()),
                         })
                     }
+
                     pub fn connect_lazy(uri: &str) -> Result<Self> {
                         let channel = Endpoint::from_shared(uri.to_string())?.connect_lazy()?;
                         Ok(S2CoreGrpcClient {
@@ -55,6 +62,7 @@ pub mod ventmere {
                                 channel.clone(),
                             ),
                             inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
+                            order: order::s2_order_client::S2OrderClient::new(channel.clone()),
                         })
                     }
                 }
