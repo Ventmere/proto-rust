@@ -23,6 +23,10 @@ pub mod ventmere {
                 tonic::include_proto!("ventmere.s2.core.product");
             }
 
+            pub mod order {
+                tonic::include_proto!("ventmere.s2.core.order");
+            }
+
             #[cfg(feature = "client")]
             pub mod client {
                 use super::*;
@@ -30,10 +34,11 @@ pub mod ventmere {
                 pub struct S2CoreGrpcClient {
                     pub product: product::s2_product_client::S2ProductClient<Channel>,
                     pub inbound_shipment:
-                        inbound_shipment::s2_inbound_shipment_client::S2InboundShipmentClient<
-                            Channel,
-                        >,
+                    inbound_shipment::s2_inbound_shipment_client::S2InboundShipmentClient<
+                        Channel,
+                    >,
                     pub inventory: inventory::s2_inventory_client::S2InventoryClient<Channel>,
+                    pub order: order::s2_order_client::S2OrderClient<Channel>,
                 }
 
                 impl S2CoreGrpcClient {
@@ -45,8 +50,10 @@ pub mod ventmere {
                                 channel.clone(),
                             ),
                             inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
+                            order: order::s2_order_client::S2OrderClient::new(channel.clone()),
                         })
                     }
+
                     pub fn connect_lazy(uri: &str) -> Result<Self> {
                         let channel = Endpoint::from_shared(uri.to_string())?.connect_lazy()?;
                         Ok(S2CoreGrpcClient {
@@ -55,6 +62,7 @@ pub mod ventmere {
                                 channel.clone(),
                             ),
                             inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
+                            order: order::s2_order_client::S2OrderClient::new(channel.clone()),
                         })
                     }
                 }
@@ -62,6 +70,8 @@ pub mod ventmere {
         }
 
         pub mod sync {
+            use anyhow::Result;
+            use tonic::transport::{Channel, Endpoint};
             pub mod product_link {
                 tonic::include_proto!("ventmere.s2.sync.product_link");
             }
@@ -70,28 +80,44 @@ pub mod ventmere {
                 tonic::include_proto!("ventmere.s2.sync.amazon");
             }
 
+            pub mod shopify {
+                tonic::include_proto!("ventmere.s2.sync.shopify");
+            }
+
             #[cfg(feature = "client")]
             pub mod client {
                 use super::*;
-                use crate::*;
 
                 #[derive(Clone)]
                 pub struct S2SyncGrpcClient {
                     pub amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient<Channel>,
+                    pub product_link:
+                        product_link::s2_sync_product_link_client::S2SyncProductLinkClient<Channel>,
+                    pub shopify: shopify::s2_sync_shopify_client::S2SyncShopifyClient<Channel>,
                 }
 
                 impl S2SyncGrpcClient {
                     pub async fn connect(uri: &str) -> Result<Self> {
                         let channel = Endpoint::from_shared(uri.to_string())?.connect().await?;
                         Ok(S2SyncGrpcClient {
-                            amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel),
+                            amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel.clone()),
+                            product_link:
+                                product_link::s2_sync_product_link_client::S2SyncProductLinkClient::new(
+                                    channel.clone(),
+                                ),
+                            shopify: shopify::s2_sync_shopify_client::S2SyncShopifyClient::new(channel.clone()),
                         })
                     }
 
                     pub fn connect_lazy(uri: &str) -> Result<Self> {
                         let channel = Endpoint::from_shared(uri.to_string())?.connect_lazy()?;
                         Ok(S2SyncGrpcClient {
-                            amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel),
+                            amazon: amazon::s2_sync_amazon_client::S2SyncAmazonClient::new(channel.clone()),
+                            product_link:
+                            product_link::s2_sync_product_link_client::S2SyncProductLinkClient::new(
+                                    channel.clone(),
+                                ),
+                            shopify: shopify::s2_sync_shopify_client::S2SyncShopifyClient::new(channel.clone()),
                         })
                     }
                 }
