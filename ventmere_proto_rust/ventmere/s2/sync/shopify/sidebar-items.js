@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["s2_sync_shopify_client","Generated client implementations."],["s2_sync_shopify_server","Generated server implementations."]],"struct":[["ImportPickupOrderReply",""],["ImportPickupOrderRequest",""]]});
+initSidebarItems({"mod":[["s2_sync_shopify_client","Generated client implementations."],["s2_sync_shopify_server","Generated server implementations."]],"struct":[["GetLinkedVariantsReply",""],["GetLinkedVariantsRequest",""],["ImportPickupOrderReply",""],["ImportPickupOrderRequest",""],["LinkedVariant",""]]});
