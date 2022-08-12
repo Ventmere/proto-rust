@@ -10,8 +10,8 @@ client = []
 server = []
 
 [dependencies]
-prost = "0.6"
-prost-types = "0.6"
+prost = "0.9"
+prost-types = "0.9"
 tonic = "0.1"
 anyhow = "1.0"
 
