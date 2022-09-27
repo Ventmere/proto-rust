@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["core",""],["sync",""]]});
+window.SIDEBAR_ITEMS = {"mod":[["core",""],["sync",""]]};

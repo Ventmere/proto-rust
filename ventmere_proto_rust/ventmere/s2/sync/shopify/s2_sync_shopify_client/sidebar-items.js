@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["S2SyncShopifyClient",""]]});
+window.SIDEBAR_ITEMS = {"struct":[["S2SyncShopifyClient",""]]};

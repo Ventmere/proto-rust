@@ -1,3 +1,4 @@
-var N = null;var sourcesIndex = {};
-sourcesIndex["ventmere_proto_rust"] = {"name":"","files":["lib.rs"]};
+var sourcesIndex = JSON.parse('{\
+"ventmere_proto_rust":["",[],["lib.rs"]]\
+}');
 createSourceSidebar();

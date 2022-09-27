@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["S2InboundShipmentServer",""]],"trait":[["S2InboundShipment","Generated trait containing gRPC methods that should be implemented for use with S2InboundShipmentServer."]]});
+window.SIDEBAR_ITEMS = {"struct":[["S2InboundShipmentServer",""]],"trait":[["S2InboundShipment","Generated trait containing gRPC methods that should be implemented for use with S2InboundShipmentServer."]]};

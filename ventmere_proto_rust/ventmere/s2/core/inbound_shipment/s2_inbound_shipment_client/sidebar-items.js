@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["S2InboundShipmentClient",""]]});
+window.SIDEBAR_ITEMS = {"struct":[["S2InboundShipmentClient",""]]};

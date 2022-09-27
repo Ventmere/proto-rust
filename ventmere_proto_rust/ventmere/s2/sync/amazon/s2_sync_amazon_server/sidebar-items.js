@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["S2SyncAmazonServer",""]],"trait":[["S2SyncAmazon","Generated trait containing gRPC methods that should be implemented for use with S2SyncAmazonServer."]]});
+window.SIDEBAR_ITEMS = {"struct":[["S2SyncAmazonServer",""]],"trait":[["S2SyncAmazon","Generated trait containing gRPC methods that should be implemented for use with S2SyncAmazonServer."]]};

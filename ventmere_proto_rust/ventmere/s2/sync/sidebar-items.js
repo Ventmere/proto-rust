@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["amazon",""],["client",""],["product_link",""],["shopify",""]]});
+window.SIDEBAR_ITEMS = {"mod":[["amazon",""],["client",""],["product_link",""],["shopify",""]]};

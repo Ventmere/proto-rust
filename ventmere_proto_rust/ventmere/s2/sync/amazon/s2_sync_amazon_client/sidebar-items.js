@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["S2SyncAmazonClient",""]]});
+window.SIDEBAR_ITEMS = {"struct":[["S2SyncAmazonClient",""]]};

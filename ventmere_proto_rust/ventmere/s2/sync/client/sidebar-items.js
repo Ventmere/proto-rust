@@ -1,1 +1,1 @@
-initSidebarItems({"struct":[["S2SyncGrpcClient",""]]});
+window.SIDEBAR_ITEMS = {"struct":[["S2SyncGrpcClient",""]]};
