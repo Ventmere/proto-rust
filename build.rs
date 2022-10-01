@@ -3,6 +3,7 @@ use std::path::PathBuf;
 use walkdir::{DirEntry, WalkDir};
 
 #[derive(Debug)]
+#[allow(unused)]
 struct Package {
     path: PathBuf,
     name: String,
@@ -66,7 +67,7 @@ fn main() {
         builder = builder.build_server(true);
     }
 
-    let paths: Vec<_> = packages.iter().map(|p| p.path.as_ref()).collect();
+    let paths: Vec<&Path> = packages.iter().map(|p| p.path.as_ref()).collect();
     builder.compile(&paths, &[Path::new("./proto")]).unwrap();
 }
 
