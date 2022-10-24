@@ -17,6 +17,8 @@ jobs:
     - uses: actions-rs/toolchain@v1
       with:
         toolchain: stable
+    - name: Install Protoc
+      uses: arduino/setup-protoc@v1
     - name: Generate
       uses: actions-rs/cargo@v1
       with:
