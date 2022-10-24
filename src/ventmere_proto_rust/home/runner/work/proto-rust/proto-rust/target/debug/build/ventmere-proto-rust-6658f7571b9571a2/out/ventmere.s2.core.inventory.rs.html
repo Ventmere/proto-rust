@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `/home/runner/work/proto-rust/proto-rust/target/debug/build/ventmere-proto-rust-3e88f829b18f6d40/out/ventmere.s2.core.inventory.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>ventmere.s2.core.inventory.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../../../../../../../../../storage.js"></script><script defer src="../../../../../../../../../../../../source-script.js"></script><script defer src="../../../../../../../../../../../../source-files.js"></script><script defer src="../../../../../../../../../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../../../../../../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../../../../../../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../../../../../../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../../../../../../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../../../../../../../../../../../ventmere_proto_rust/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../../../../../../../../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../../../../../../../../../../../ventmere_proto_rust/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../../../../../../../../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../../../../../../../../../../../ventmere_proto_rust/index.html"><img class="rust-logo" src="../../../../../../../../../../../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../../../../../../../../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../../../../../../../../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source of the Rust file `/home/runner/work/proto-rust/proto-rust/target/debug/build/ventmere-proto-rust-6658f7571b9571a2/out/ventmere.s2.core.inventory.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>ventmere.s2.core.inventory.rs - source</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../SourceSerif4-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../FiraSans-Regular.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../FiraSans-Medium.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../SourceCodePro-Regular.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../SourceSerif4-Bold.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../../../../../../../../../SourceCodePro-Semibold.ttf.woff2"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../ayu.css" disabled><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../dark.css" disabled><link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../light.css" id="themeStyle"><script id="default-settings" ></script><script src="../../../../../../../../../../../../storage.js"></script><script defer src="../../../../../../../../../../../../source-script.js"></script><script defer src="../../../../../../../../../../../../source-files.js"></script><script defer src="../../../../../../../../../../../../main.js"></script><noscript><link rel="stylesheet" href="../../../../../../../../../../../../noscript.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../../../../../../../../../favicon-16x16.png"><link rel="alternate icon" type="image/png" href="../../../../../../../../../../../../favicon-32x32.png"><link rel="icon" type="image/svg+xml" href="../../../../../../../../../../../../favicon.svg"></head><body class="rustdoc source"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="sidebar-logo" href="../../../../../../../../../../../../ventmere_proto_rust/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../../../../../../../../../rust-logo.svg" alt="logo"></div></a><h2 class="location"></h2></nav><nav class="sidebar"><a class="sidebar-logo" href="../../../../../../../../../../../../ventmere_proto_rust/index.html"><div class="logo-container"><img class="rust-logo" src="../../../../../../../../../../../../rust-logo.svg" alt="logo"></div></a></nav><main><div class="width-limiter"><div class="sub-container"><a class="sub-logo-container" href="../../../../../../../../../../../../ventmere_proto_rust/index.html"><img class="rust-logo" src="../../../../../../../../../../../../rust-logo.svg" alt="logo"></a><nav class="sub"><form class="search-form"><div class="search-container"><span></span><input class="search-input" name="search" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><button type="button">?</button></div><div id="settings-menu" tabindex="-1"><a href="../../../../../../../../../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../../../../../../../../../wheel.svg"></a></div></div></form></nav></div><section id="main-content" class="content"><div class="example-wrap"><pre class="line-numbers"><span id="1">1</span>
 <span id="2">2</span>
 <span id="3">3</span>
 <span id="4">4</span>
@@ -640,209 +640,350 @@
 <span id="640">640</span>
 <span id="641">641</span>
 <span id="642">642</span>
+<span id="643">643</span>
+<span id="644">644</span>
+<span id="645">645</span>
+<span id="646">646</span>
+<span id="647">647</span>
+<span id="648">648</span>
+<span id="649">649</span>
+<span id="650">650</span>
+<span id="651">651</span>
+<span id="652">652</span>
+<span id="653">653</span>
+<span id="654">654</span>
+<span id="655">655</span>
+<span id="656">656</span>
+<span id="657">657</span>
+<span id="658">658</span>
+<span id="659">659</span>
+<span id="660">660</span>
+<span id="661">661</span>
+<span id="662">662</span>
+<span id="663">663</span>
+<span id="664">664</span>
+<span id="665">665</span>
+<span id="666">666</span>
+<span id="667">667</span>
+<span id="668">668</span>
+<span id="669">669</span>
+<span id="670">670</span>
+<span id="671">671</span>
+<span id="672">672</span>
+<span id="673">673</span>
+<span id="674">674</span>
+<span id="675">675</span>
+<span id="676">676</span>
+<span id="677">677</span>
+<span id="678">678</span>
+<span id="679">679</span>
+<span id="680">680</span>
+<span id="681">681</span>
+<span id="682">682</span>
+<span id="683">683</span>
+<span id="684">684</span>
+<span id="685">685</span>
+<span id="686">686</span>
+<span id="687">687</span>
+<span id="688">688</span>
+<span id="689">689</span>
+<span id="690">690</span>
+<span id="691">691</span>
+<span id="692">692</span>
+<span id="693">693</span>
+<span id="694">694</span>
+<span id="695">695</span>
+<span id="696">696</span>
+<span id="697">697</span>
+<span id="698">698</span>
+<span id="699">699</span>
+<span id="700">700</span>
+<span id="701">701</span>
+<span id="702">702</span>
+<span id="703">703</span>
+<span id="704">704</span>
+<span id="705">705</span>
+<span id="706">706</span>
+<span id="707">707</span>
+<span id="708">708</span>
+<span id="709">709</span>
+<span id="710">710</span>
+<span id="711">711</span>
+<span id="712">712</span>
+<span id="713">713</span>
+<span id="714">714</span>
+<span id="715">715</span>
+<span id="716">716</span>
+<span id="717">717</span>
+<span id="718">718</span>
+<span id="719">719</span>
+<span id="720">720</span>
+<span id="721">721</span>
+<span id="722">722</span>
+<span id="723">723</span>
+<span id="724">724</span>
+<span id="725">725</span>
+<span id="726">726</span>
+<span id="727">727</span>
+<span id="728">728</span>
+<span id="729">729</span>
+<span id="730">730</span>
+<span id="731">731</span>
+<span id="732">732</span>
+<span id="733">733</span>
+<span id="734">734</span>
+<span id="735">735</span>
+<span id="736">736</span>
+<span id="737">737</span>
+<span id="738">738</span>
+<span id="739">739</span>
+<span id="740">740</span>
+<span id="741">741</span>
+<span id="742">742</span>
+<span id="743">743</span>
+<span id="744">744</span>
+<span id="745">745</span>
+<span id="746">746</span>
+<span id="747">747</span>
+<span id="748">748</span>
+<span id="749">749</span>
+<span id="750">750</span>
+<span id="751">751</span>
+<span id="752">752</span>
+<span id="753">753</span>
+<span id="754">754</span>
+<span id="755">755</span>
+<span id="756">756</span>
+<span id="757">757</span>
+<span id="758">758</span>
+<span id="759">759</span>
+<span id="760">760</span>
+<span id="761">761</span>
+<span id="762">762</span>
+<span id="763">763</span>
+<span id="764">764</span>
+<span id="765">765</span>
+<span id="766">766</span>
+<span id="767">767</span>
+<span id="768">768</span>
+<span id="769">769</span>
+<span id="770">770</span>
+<span id="771">771</span>
+<span id="772">772</span>
+<span id="773">773</span>
+<span id="774">774</span>
+<span id="775">775</span>
+<span id="776">776</span>
+<span id="777">777</span>
+<span id="778">778</span>
+<span id="779">779</span>
+<span id="780">780</span>
+<span id="781">781</span>
+<span id="782">782</span>
+<span id="783">783</span>
 </pre><pre class="rust"><code><span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">QueryWarehouseEventsSumRequest</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">after_event_id</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">i32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">warehouse_ids</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">::prost::alloc::string::String</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">product_ids</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">i32</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">QueryWarehouseEventsSumReply</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">after_event_id</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">i32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">inventory_items</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">InventoryItem</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">InventoryWarehouse</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">id</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">system_id</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">i32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">name</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;4&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;4&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">r#type</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;5&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;5&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">lead_days</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">bool</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;6&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">bool</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;6&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">is_dropshipper</span>: <span class="ident">bool</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">bool</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;7&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">bool</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;7&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">is_fulfillment_center</span>: <span class="ident">bool</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">bool</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;8&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">bool</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;8&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">is_rma_center</span>: <span class="ident">bool</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">bool</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;9&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">bool</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;9&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">manage_inventory</span>: <span class="ident">bool</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;10&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;10&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">countries</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">::prost::alloc::string::String</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;11&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;11&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">channel_account_id</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">i32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;12&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;12&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">fulfillment_service</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">::prost::alloc::string::String</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;13&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;13&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">meta</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">InventoryWarehouseMeta</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">InventoryWarehouseMeta</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;6&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;6&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">warehouse_id</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">brands</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::brand::Brand</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">amazon_prime_templates</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">::prost::alloc::string::String</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">address</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">InventoryWarehouseAddress</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;4&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;4&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">address_country_id</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">::prost::alloc::string::String</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;5&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;5&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">address_name</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">::prost::alloc::string::String</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">InventoryWarehouseAddress</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">address1</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">address2</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">::prost::alloc::string::String</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">city</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;4&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;4&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">country_id</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;5&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;5&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">province</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;6&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;6&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">zip</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;7&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;7&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">phone</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;8&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;8&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">name</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">::prost::alloc::string::String</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">QueryProductFulfillableInventoryRequest</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">products</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">i32</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">sales_channels</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">SalesChannel</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">QueryProductFulfillableInventoryReply</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">warehouses</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">InventoryWarehouse</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">items</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">FulfillableInventory</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">SalesChannel</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">channel_account_id</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">sub_channel_id</span>: <span class="ident">::prost::alloc::string::String</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">FulfillableInventoryDetail</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">warehouse_id</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">quantity</span>: <span class="ident">i32</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">HoldInventoryDetail</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">enumeration</span> <span class="op">=</span> <span class="string">&quot;HoldKind&quot;</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">enumeration</span><span class="op">=</span><span class="string">&quot;HoldKind&quot;</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">kind</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">channel_account_id</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">sub_channel_id</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;4&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;4&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">quantity</span>: <span class="ident">i32</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">FulfillableInventory</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">product_id</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">bool</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">bool</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">product_sellable</span>: <span class="ident">bool</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">optional</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">sales_channel</span>: <span class="ident">::core::option::Option</span><span class="op">&lt;</span><span class="ident">SalesChannel</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;4&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;4&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">reserved_quantity</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;5&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;5&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">hold_quantity</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;6&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;6&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">inventory_quantity</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;7&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;7&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">total_quantity</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;8&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;8&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">inventory_details</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">FulfillableInventoryDetail</span><span class="op">&gt;</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;9&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;9&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">hold_details</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">HoldInventoryDetail</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">ImportFbaInventoryItemsRequest</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">account_id</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">marketplace_id</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">items</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">FbaInventoryItem</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">FbaInventoryItem</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">fnsku</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">product_id</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">in_stock_quantity</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;4&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;4&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">detail</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">FbaInventoryDetail</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">FbaInventoryDetail</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">quantity</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">enumeration</span> <span class="op">=</span> <span class="string">&quot;FbaSupplyType&quot;</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">enumeration</span><span class="op">=</span><span class="string">&quot;FbaSupplyType&quot;</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">supply_type</span>: <span class="ident">i32</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">QueryFbaWarehouseProductsRequest</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">account_id</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">marketplace_id</span>: <span class="ident">::prost::alloc::string::String</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">take</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;4&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;4&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">skip</span>: <span class="ident">i32</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">QueryFbaWarehouseProductsReply</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">products</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">FbaWarehouseProduct</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">FbaWarehouseProduct</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">product_id</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">inventory_items</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">InventoryItem</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">InventoryItem</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">product_id</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">enumeration</span> <span class="op">=</span> <span class="string">&quot;InventoryKind&quot;</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;2&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">enumeration</span><span class="op">=</span><span class="string">&quot;InventoryKind&quot;</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;2&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">kind</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;3&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">int32</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;3&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">quantity</span>: <span class="ident">i32</span>,
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;4&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">string</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;4&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">warehouse_id</span>: <span class="ident">::prost::alloc::string::String</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">PartialEq</span>, <span class="ident">::prost::Message</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">GetInventoryWarehousesReply</span> {
-    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span> <span class="op">=</span> <span class="string">&quot;1&quot;</span>)]</span>
+    <span class="attribute">#[<span class="ident">prost</span>(<span class="ident">message</span>, <span class="ident">repeated</span>, <span class="ident">tag</span><span class="op">=</span><span class="string">&quot;1&quot;</span>)]</span>
     <span class="kw">pub</span> <span class="ident">warehouses</span>: <span class="ident">::prost::alloc::vec::Vec</span><span class="op">&lt;</span><span class="ident">InventoryWarehouse</span><span class="op">&gt;</span>,
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Debug</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>, <span class="ident">Hash</span>, <span class="ident">PartialOrd</span>, <span class="ident">Ord</span>, <span class="ident">::prost::Enumeration</span>)]</span>
@@ -850,6 +991,18 @@
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">HoldKind</span> {
     <span class="ident">Unknown</span> <span class="op">=</span> <span class="number">0</span>,
     <span class="ident">Order</span> <span class="op">=</span> <span class="number">1</span>,
+}
+<span class="kw">impl</span> <span class="ident">HoldKind</span> {
+    <span class="doccomment">/// String value of the enum field names used in the ProtoBuf definition.</span>
+    <span class="doccomment">///</span>
+    <span class="doccomment">/// The values are not transformed in any way and thus are considered stable</span>
+    <span class="doccomment">/// (if the ProtoBuf definition does not change) and safe for programmatic use.</span>
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">as_str_name</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span> {
+        <span class="kw">match</span> <span class="self">self</span> {
+            <span class="ident">HoldKind::Unknown</span> =&gt; <span class="string">&quot;Unknown&quot;</span>,
+            <span class="ident">HoldKind::Order</span> =&gt; <span class="string">&quot;Order&quot;</span>,
+        }
+    }
 }
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Debug</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>, <span class="ident">Hash</span>, <span class="ident">PartialOrd</span>, <span class="ident">Ord</span>, <span class="ident">::prost::Enumeration</span>)]</span>
 <span class="attribute">#[<span class="ident">repr</span>(<span class="ident">i32</span>)]</span>
@@ -859,6 +1012,20 @@
     <span class="ident">Inbound</span> <span class="op">=</span> <span class="number">2</span>,
     <span class="ident">Transfer</span> <span class="op">=</span> <span class="number">3</span>,
 }
+<span class="kw">impl</span> <span class="ident">FbaSupplyType</span> {
+    <span class="doccomment">/// String value of the enum field names used in the ProtoBuf definition.</span>
+    <span class="doccomment">///</span>
+    <span class="doccomment">/// The values are not transformed in any way and thus are considered stable</span>
+    <span class="doccomment">/// (if the ProtoBuf definition does not change) and safe for programmatic use.</span>
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">as_str_name</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span> {
+        <span class="kw">match</span> <span class="self">self</span> {
+            <span class="ident">FbaSupplyType::Unknown</span> =&gt; <span class="string">&quot;FbaSupplyTypeUnknown&quot;</span>,
+            <span class="ident">FbaSupplyType::InStock</span> =&gt; <span class="string">&quot;FbaSupplyTypeInStock&quot;</span>,
+            <span class="ident">FbaSupplyType::Inbound</span> =&gt; <span class="string">&quot;FbaSupplyTypeInbound&quot;</span>,
+            <span class="ident">FbaSupplyType::Transfer</span> =&gt; <span class="string">&quot;FbaSupplyTypeTransfer&quot;</span>,
+        }
+    }
+}
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Clone</span>, <span class="ident">Copy</span>, <span class="ident">Debug</span>, <span class="ident">PartialEq</span>, <span class="ident">Eq</span>, <span class="ident">Hash</span>, <span class="ident">PartialOrd</span>, <span class="ident">Ord</span>, <span class="ident">::prost::Enumeration</span>)]</span>
 <span class="attribute">#[<span class="ident">repr</span>(<span class="ident">i32</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">InventoryKind</span> {
@@ -867,16 +1034,31 @@
     <span class="ident">Pending</span> <span class="op">=</span> <span class="number">2</span>,
     <span class="ident">Hold</span> <span class="op">=</span> <span class="number">3</span>,
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">r&quot; Generated client implementations.&quot;</span>]</span>
+<span class="kw">impl</span> <span class="ident">InventoryKind</span> {
+    <span class="doccomment">/// String value of the enum field names used in the ProtoBuf definition.</span>
+    <span class="doccomment">///</span>
+    <span class="doccomment">/// The values are not transformed in any way and thus are considered stable</span>
+    <span class="doccomment">/// (if the ProtoBuf definition does not change) and safe for programmatic use.</span>
+    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">as_str_name</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span> {
+        <span class="kw">match</span> <span class="self">self</span> {
+            <span class="ident">InventoryKind::Unknown</span> =&gt; <span class="string">&quot;InventoryKindUnknown&quot;</span>,
+            <span class="ident">InventoryKind::Completed</span> =&gt; <span class="string">&quot;Completed&quot;</span>,
+            <span class="ident">InventoryKind::Pending</span> =&gt; <span class="string">&quot;Pending&quot;</span>,
+            <span class="ident">InventoryKind::Hold</span> =&gt; <span class="string">&quot;Hold&quot;</span>,
+        }
+    }
+}
+<span class="doccomment">/// Generated client implementations.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">s2_inventory_client</span> {
     <span class="attribute">#![<span class="ident">allow</span>(<span class="ident">unused_variables</span>, <span class="ident">dead_code</span>, <span class="ident">missing_docs</span>, <span class="ident">clippy::let_unit_value</span>)]</span>
     <span class="kw">use</span> <span class="ident">tonic::codegen</span>::<span class="kw-2">*</span>;
+    <span class="kw">use</span> <span class="ident">tonic::codegen::http::Uri</span>;
     <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>, <span class="ident">Clone</span>)]</span>
     <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">S2InventoryClient</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
         <span class="ident">inner</span>: <span class="ident">tonic::client::Grpc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>,
     }
     <span class="kw">impl</span> <span class="ident">S2InventoryClient</span><span class="op">&lt;</span><span class="ident">tonic::transport::Channel</span><span class="op">&gt;</span> {
-        <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">r&quot; Attempt to create a new client by connecting to a given endpoint.&quot;</span>]</span>
+        <span class="doccomment">/// Attempt to create a new client by connecting to a given endpoint.</span>
         <span class="kw">pub</span> <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">connect</span><span class="op">&lt;</span><span class="ident">D</span><span class="op">&gt;</span>(<span class="ident">dst</span>: <span class="ident">D</span>) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="ident">tonic::transport::Error</span><span class="op">&gt;</span>
         <span class="kw">where</span>
             <span class="ident">D</span>: <span class="ident">std::convert::TryInto</span><span class="op">&lt;</span><span class="ident">tonic::transport::Endpoint</span><span class="op">&gt;</span>,
@@ -889,12 +1071,16 @@
     <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> <span class="ident">S2InventoryClient</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">T</span>: <span class="ident">tonic::client::GrpcService</span><span class="op">&lt;</span><span class="ident">tonic::body::BoxBody</span><span class="op">&gt;</span>,
-        <span class="ident">T::ResponseBody</span>: <span class="ident">Body</span> <span class="op">+</span> <span class="ident">Send</span> <span class="op">+</span> <span class="ident">Sync</span> <span class="op">+</span> <span class="lifetime">&#39;static</span>,
         <span class="ident">T::Error</span>: <span class="ident">Into</span><span class="op">&lt;</span><span class="ident">StdError</span><span class="op">&gt;</span>,
+        <span class="ident">T::ResponseBody</span>: <span class="ident">Body</span><span class="op">&lt;</span><span class="ident">Data</span> <span class="op">=</span> <span class="ident">Bytes</span><span class="op">&gt;</span> <span class="op">+</span> <span class="ident">Send</span> <span class="op">+</span> <span class="lifetime">&#39;static</span>,
         <span class="op">&lt;</span><span class="ident">T::ResponseBody</span> <span class="kw">as</span> <span class="ident">Body</span><span class="op">&gt;</span><span class="ident">::Error</span>: <span class="ident">Into</span><span class="op">&lt;</span><span class="ident">StdError</span><span class="op">&gt;</span> <span class="op">+</span> <span class="ident">Send</span>,
     {
         <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">new</span>(<span class="ident">inner</span>: <span class="ident">T</span>) -&gt; <span class="self">Self</span> {
             <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">tonic::client::Grpc::new</span>(<span class="ident">inner</span>);
+            <span class="self">Self</span> { <span class="ident">inner</span> }
+        }
+        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">with_origin</span>(<span class="ident">inner</span>: <span class="ident">T</span>, <span class="ident">origin</span>: <span class="ident">Uri</span>) -&gt; <span class="self">Self</span> {
+            <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">tonic::client::Grpc::with_origin</span>(<span class="ident">inner</span>, <span class="ident">origin</span>);
             <span class="self">Self</span> { <span class="ident">inner</span> }
         }
         <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">with_interceptor</span><span class="op">&lt;</span><span class="ident">F</span><span class="op">&gt;</span>(
@@ -903,41 +1089,52 @@
         ) -&gt; <span class="ident">S2InventoryClient</span><span class="op">&lt;</span><span class="ident">InterceptedService</span><span class="op">&lt;</span><span class="ident">T</span>, <span class="ident">F</span><span class="op">&gt;</span><span class="op">&gt;</span>
         <span class="kw">where</span>
             <span class="ident">F</span>: <span class="ident">tonic::service::Interceptor</span>,
+            <span class="ident">T::ResponseBody</span>: <span class="ident">Default</span>,
             <span class="ident">T</span>: <span class="ident">tonic::codegen::Service</span><span class="op">&lt;</span>
                 <span class="ident">http::Request</span><span class="op">&lt;</span><span class="ident">tonic::body::BoxBody</span><span class="op">&gt;</span>,
                 <span class="ident">Response</span> <span class="op">=</span> <span class="ident">http::Response</span><span class="op">&lt;</span>
                     <span class="op">&lt;</span><span class="ident">T</span> <span class="kw">as</span> <span class="ident">tonic::client::GrpcService</span><span class="op">&lt;</span><span class="ident">tonic::body::BoxBody</span><span class="op">&gt;</span><span class="op">&gt;</span><span class="ident">::ResponseBody</span>,
                 <span class="op">&gt;</span>,
             <span class="op">&gt;</span>,
-            <span class="op">&lt;</span><span class="ident">T</span> <span class="kw">as</span> <span class="ident">tonic::codegen::Service</span><span class="op">&lt;</span><span class="ident">http::Request</span><span class="op">&lt;</span><span class="ident">tonic::body::BoxBody</span><span class="op">&gt;</span><span class="op">&gt;</span><span class="op">&gt;</span><span class="ident">::Error</span>:
-                <span class="ident">Into</span><span class="op">&lt;</span><span class="ident">StdError</span><span class="op">&gt;</span> <span class="op">+</span> <span class="ident">Send</span> <span class="op">+</span> <span class="ident">Sync</span>,
+            <span class="op">&lt;</span><span class="ident">T</span> <span class="kw">as</span> <span class="ident">tonic::codegen::Service</span><span class="op">&lt;</span>
+                <span class="ident">http::Request</span><span class="op">&lt;</span><span class="ident">tonic::body::BoxBody</span><span class="op">&gt;</span>,
+            <span class="op">&gt;</span><span class="op">&gt;</span><span class="ident">::Error</span>: <span class="ident">Into</span><span class="op">&lt;</span><span class="ident">StdError</span><span class="op">&gt;</span> <span class="op">+</span> <span class="ident">Send</span> <span class="op">+</span> <span class="ident">Sync</span>,
         {
             <span class="ident">S2InventoryClient::new</span>(<span class="ident">InterceptedService::new</span>(<span class="ident">inner</span>, <span class="ident">interceptor</span>))
         }
-        <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">r&quot; Compress requests with `gzip`.&quot;</span>]</span>
-        <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">r&quot;&quot;</span>]</span>
-        <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">r&quot; This requires the server to support it otherwise it might respond with an&quot;</span>]</span>
-        <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">r&quot; error.&quot;</span>]</span>
-        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">send_gzip</span>(<span class="kw-2">mut</span> <span class="self">self</span>) -&gt; <span class="self">Self</span> {
-            <span class="self">self</span>.<span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">send_gzip</span>();
+        <span class="doccomment">/// Compress requests with the given encoding.</span>
+        <span class="doccomment">///</span>
+        <span class="doccomment">/// This requires the server to support it otherwise it might respond with an</span>
+        <span class="doccomment">/// error.</span>
+        <span class="attribute">#[<span class="ident">must_use</span>]</span>
+        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">send_compressed</span>(<span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">encoding</span>: <span class="ident">CompressionEncoding</span>) -&gt; <span class="self">Self</span> {
+            <span class="self">self</span>.<span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">send_compressed</span>(<span class="ident">encoding</span>);
             <span class="self">self</span>
         }
-        <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">r&quot; Enable decompressing responses with `gzip`.&quot;</span>]</span>
-        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">accept_gzip</span>(<span class="kw-2">mut</span> <span class="self">self</span>) -&gt; <span class="self">Self</span> {
-            <span class="self">self</span>.<span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">accept_gzip</span>();
+        <span class="doccomment">/// Enable decompressing responses.</span>
+        <span class="attribute">#[<span class="ident">must_use</span>]</span>
+        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">accept_compressed</span>(<span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">encoding</span>: <span class="ident">CompressionEncoding</span>) -&gt; <span class="self">Self</span> {
+            <span class="self">self</span>.<span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">accept_compressed</span>(<span class="ident">encoding</span>);
             <span class="self">self</span>
         }
         <span class="kw">pub</span> <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">query_product_fulfillable_inventory</span>(
             <span class="kw-2">&amp;mut</span> <span class="self">self</span>,
-            <span class="ident">request</span>: <span class="kw">impl</span> <span class="ident">tonic::IntoRequest</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryRequest</span><span class="op">&gt;</span>,
-        ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryReply</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span>
-        {
-            <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">ready</span>().<span class="kw">await</span>.<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
-                <span class="ident">tonic::Status::new</span>(
-                    <span class="ident">tonic::Code::Unknown</span>,
-                    <span class="macro">format!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
-                )
-            })<span class="question-mark">?</span>;
+            <span class="ident">request</span>: <span class="kw">impl</span> <span class="ident">tonic::IntoRequest</span><span class="op">&lt;</span>
+                <span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryRequest</span>,
+            <span class="op">&gt;</span>,
+        ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span>
+            <span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryReply</span><span class="op">&gt;</span>,
+            <span class="ident">tonic::Status</span>,
+        <span class="op">&gt;</span> {
+            <span class="self">self</span>.<span class="ident">inner</span>
+                .<span class="ident">ready</span>()
+                .<span class="kw">await</span>
+                .<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
+                    <span class="ident">tonic::Status::new</span>(
+                        <span class="ident">tonic::Code::Unknown</span>,
+                        <span class="macro">format!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
+                    )
+                })<span class="question-mark">?</span>;
             <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic::codec::ProstCodec::default</span>();
             <span class="kw">let</span> <span class="ident">path</span> <span class="op">=</span> <span class="ident">http::uri::PathAndQuery::from_static</span>(
                 <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/QueryProductFulfillableInventory&quot;</span>,
@@ -948,12 +1145,15 @@
             <span class="kw-2">&amp;mut</span> <span class="self">self</span>,
             <span class="ident">request</span>: <span class="kw">impl</span> <span class="ident">tonic::IntoRequest</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::ImportFbaInventoryItemsRequest</span><span class="op">&gt;</span>,
         ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span>()<span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span> {
-            <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">ready</span>().<span class="kw">await</span>.<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
-                <span class="ident">tonic::Status::new</span>(
-                    <span class="ident">tonic::Code::Unknown</span>,
-                    <span class="macro">format!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
-                )
-            })<span class="question-mark">?</span>;
+            <span class="self">self</span>.<span class="ident">inner</span>
+                .<span class="ident">ready</span>()
+                .<span class="kw">await</span>
+                .<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
+                    <span class="ident">tonic::Status::new</span>(
+                        <span class="ident">tonic::Code::Unknown</span>,
+                        <span class="macro">format!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
+                    )
+                })<span class="question-mark">?</span>;
             <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic::codec::ProstCodec::default</span>();
             <span class="kw">let</span> <span class="ident">path</span> <span class="op">=</span> <span class="ident">http::uri::PathAndQuery::from_static</span>(
                 <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/ImportFbaInventoryItems&quot;</span>,
@@ -963,13 +1163,19 @@
         <span class="kw">pub</span> <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">query_fba_warehouse_products</span>(
             <span class="kw-2">&amp;mut</span> <span class="self">self</span>,
             <span class="ident">request</span>: <span class="kw">impl</span> <span class="ident">tonic::IntoRequest</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsRequest</span><span class="op">&gt;</span>,
-        ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsReply</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span> {
-            <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">ready</span>().<span class="kw">await</span>.<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
-                <span class="ident">tonic::Status::new</span>(
-                    <span class="ident">tonic::Code::Unknown</span>,
-                    <span class="macro">format!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
-                )
-            })<span class="question-mark">?</span>;
+        ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span>
+            <span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsReply</span><span class="op">&gt;</span>,
+            <span class="ident">tonic::Status</span>,
+        <span class="op">&gt;</span> {
+            <span class="self">self</span>.<span class="ident">inner</span>
+                .<span class="ident">ready</span>()
+                .<span class="kw">await</span>
+                .<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
+                    <span class="ident">tonic::Status::new</span>(
+                        <span class="ident">tonic::Code::Unknown</span>,
+                        <span class="macro">format!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
+                    )
+                })<span class="question-mark">?</span>;
             <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic::codec::ProstCodec::default</span>();
             <span class="kw">let</span> <span class="ident">path</span> <span class="op">=</span> <span class="ident">http::uri::PathAndQuery::from_static</span>(
                 <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/QueryFbaWarehouseProducts&quot;</span>,
@@ -979,13 +1185,19 @@
         <span class="kw">pub</span> <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">query_warehouse_events_sum</span>(
             <span class="kw-2">&amp;mut</span> <span class="self">self</span>,
             <span class="ident">request</span>: <span class="kw">impl</span> <span class="ident">tonic::IntoRequest</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryWarehouseEventsSumRequest</span><span class="op">&gt;</span>,
-        ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryWarehouseEventsSumReply</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span> {
-            <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">ready</span>().<span class="kw">await</span>.<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
-                <span class="ident">tonic::Status::new</span>(
-                    <span class="ident">tonic::Code::Unknown</span>,
-                    <span class="macro">format!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
-                )
-            })<span class="question-mark">?</span>;
+        ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span>
+            <span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryWarehouseEventsSumReply</span><span class="op">&gt;</span>,
+            <span class="ident">tonic::Status</span>,
+        <span class="op">&gt;</span> {
+            <span class="self">self</span>.<span class="ident">inner</span>
+                .<span class="ident">ready</span>()
+                .<span class="kw">await</span>
+                .<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
+                    <span class="ident">tonic::Status::new</span>(
+                        <span class="ident">tonic::Code::Unknown</span>,
+                        <span class="macro">format!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
+                    )
+                })<span class="question-mark">?</span>;
             <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic::codec::ProstCodec::default</span>();
             <span class="kw">let</span> <span class="ident">path</span> <span class="op">=</span> <span class="ident">http::uri::PathAndQuery::from_static</span>(
                 <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/QueryWarehouseEventsSum&quot;</span>,
@@ -996,12 +1208,15 @@
             <span class="kw-2">&amp;mut</span> <span class="self">self</span>,
             <span class="ident">request</span>: <span class="kw">impl</span> <span class="ident">tonic::IntoRequest</span><span class="op">&lt;</span>()<span class="op">&gt;</span>,
         ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::GetInventoryWarehousesReply</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span> {
-            <span class="self">self</span>.<span class="ident">inner</span>.<span class="ident">ready</span>().<span class="kw">await</span>.<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
-                <span class="ident">tonic::Status::new</span>(
-                    <span class="ident">tonic::Code::Unknown</span>,
-                    <span class="macro">format!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
-                )
-            })<span class="question-mark">?</span>;
+            <span class="self">self</span>.<span class="ident">inner</span>
+                .<span class="ident">ready</span>()
+                .<span class="kw">await</span>
+                .<span class="ident">map_err</span>(<span class="op">|</span><span class="ident">e</span><span class="op">|</span> {
+                    <span class="ident">tonic::Status::new</span>(
+                        <span class="ident">tonic::Code::Unknown</span>,
+                        <span class="macro">format!</span>(<span class="string">&quot;Service was not ready: {}&quot;</span>, <span class="ident">e</span>.<span class="ident">into</span>()),
+                    )
+                })<span class="question-mark">?</span>;
             <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic::codec::ProstCodec::default</span>();
             <span class="kw">let</span> <span class="ident">path</span> <span class="op">=</span> <span class="ident">http::uri::PathAndQuery::from_static</span>(
                 <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/GetInventoryWarehouses&quot;</span>,
@@ -1010,17 +1225,20 @@
         }
     }
 }
-<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">r&quot; Generated server implementations.&quot;</span>]</span>
+<span class="doccomment">/// Generated server implementations.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">s2_inventory_server</span> {
     <span class="attribute">#![<span class="ident">allow</span>(<span class="ident">unused_variables</span>, <span class="ident">dead_code</span>, <span class="ident">missing_docs</span>, <span class="ident">clippy::let_unit_value</span>)]</span>
     <span class="kw">use</span> <span class="ident">tonic::codegen</span>::<span class="kw-2">*</span>;
-    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;Generated trait containing gRPC methods that should be implemented for use with S2InventoryServer.&quot;</span>]</span>
+    <span class="doccomment">///Generated trait containing gRPC methods that should be implemented for use with S2InventoryServer.</span>
     <span class="attribute">#[<span class="ident">async_trait</span>]</span>
     <span class="kw">pub</span> <span class="kw">trait</span> <span class="ident">S2Inventory</span>: <span class="ident">Send</span> <span class="op">+</span> <span class="ident">Sync</span> <span class="op">+</span> <span class="lifetime">&#39;static</span> {
         <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">query_product_fulfillable_inventory</span>(
             <span class="kw-2">&amp;</span><span class="self">self</span>,
             <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryRequest</span><span class="op">&gt;</span>,
-        ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryReply</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span>;
+        ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span>
+            <span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryReply</span><span class="op">&gt;</span>,
+            <span class="ident">tonic::Status</span>,
+        <span class="op">&gt;</span>;
         <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">import_fba_inventory_items</span>(
             <span class="kw-2">&amp;</span><span class="self">self</span>,
             <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::ImportFbaInventoryItemsRequest</span><span class="op">&gt;</span>,
@@ -1028,7 +1246,10 @@
         <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">query_fba_warehouse_products</span>(
             <span class="kw-2">&amp;</span><span class="self">self</span>,
             <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsRequest</span><span class="op">&gt;</span>,
-        ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsReply</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span>;
+        ) -&gt; <span class="prelude-ty">Result</span><span class="op">&lt;</span>
+            <span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsReply</span><span class="op">&gt;</span>,
+            <span class="ident">tonic::Status</span>,
+        <span class="op">&gt;</span>;
         <span class="kw">async</span> <span class="kw">fn</span> <span class="ident">query_warehouse_events_sum</span>(
             <span class="kw-2">&amp;</span><span class="self">self</span>,
             <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryWarehouseEventsSumRequest</span><span class="op">&gt;</span>,
@@ -1041,13 +1262,15 @@
     <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>)]</span>
     <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">S2InventoryServer</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span> {
         <span class="ident">inner</span>: <span class="ident">_Inner</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>,
-        <span class="ident">accept_compression_encodings</span>: (),
-        <span class="ident">send_compression_encodings</span>: (),
+        <span class="ident">accept_compression_encodings</span>: <span class="ident">EnabledCompressionEncodings</span>,
+        <span class="ident">send_compression_encodings</span>: <span class="ident">EnabledCompressionEncodings</span>,
     }
     <span class="kw">struct</span> <span class="ident">_Inner</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>(<span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>);
     <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span> <span class="ident">S2InventoryServer</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
         <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">new</span>(<span class="ident">inner</span>: <span class="ident">T</span>) -&gt; <span class="self">Self</span> {
-            <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">Arc::new</span>(<span class="ident">inner</span>);
+            <span class="ident"><span class="self">Self</span>::from_arc</span>(<span class="ident">Arc::new</span>(<span class="ident">inner</span>))
+        }
+        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">from_arc</span>(<span class="ident">inner</span>: <span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>) -&gt; <span class="self">Self</span> {
             <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">_Inner</span>(<span class="ident">inner</span>);
             <span class="self">Self</span> {
                 <span class="ident">inner</span>,
@@ -1055,23 +1278,41 @@
                 <span class="ident">send_compression_encodings</span>: <span class="ident">Default::default</span>(),
             }
         }
-        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">with_interceptor</span><span class="op">&lt;</span><span class="ident">F</span><span class="op">&gt;</span>(<span class="ident">inner</span>: <span class="ident">T</span>, <span class="ident">interceptor</span>: <span class="ident">F</span>) -&gt; <span class="ident">InterceptedService</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="ident">F</span><span class="op">&gt;</span>
+        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">with_interceptor</span><span class="op">&lt;</span><span class="ident">F</span><span class="op">&gt;</span>(
+            <span class="ident">inner</span>: <span class="ident">T</span>,
+            <span class="ident">interceptor</span>: <span class="ident">F</span>,
+        ) -&gt; <span class="ident">InterceptedService</span><span class="op">&lt;</span><span class="self">Self</span>, <span class="ident">F</span><span class="op">&gt;</span>
         <span class="kw">where</span>
             <span class="ident">F</span>: <span class="ident">tonic::service::Interceptor</span>,
         {
             <span class="ident">InterceptedService::new</span>(<span class="ident"><span class="self">Self</span>::new</span>(<span class="ident">inner</span>), <span class="ident">interceptor</span>)
         }
+        <span class="doccomment">/// Enable decompressing requests with the given encoding.</span>
+        <span class="attribute">#[<span class="ident">must_use</span>]</span>
+        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">accept_compressed</span>(<span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">encoding</span>: <span class="ident">CompressionEncoding</span>) -&gt; <span class="self">Self</span> {
+            <span class="self">self</span>.<span class="ident">accept_compression_encodings</span>.<span class="ident">enable</span>(<span class="ident">encoding</span>);
+            <span class="self">self</span>
+        }
+        <span class="doccomment">/// Compress responses with the given encoding, if the client supports it.</span>
+        <span class="attribute">#[<span class="ident">must_use</span>]</span>
+        <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">send_compressed</span>(<span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">encoding</span>: <span class="ident">CompressionEncoding</span>) -&gt; <span class="self">Self</span> {
+            <span class="self">self</span>.<span class="ident">send_compression_encodings</span>.<span class="ident">enable</span>(<span class="ident">encoding</span>);
+            <span class="self">self</span>
+        }
     }
     <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>, <span class="ident">B</span><span class="op">&gt;</span> <span class="ident">tonic::codegen::Service</span><span class="op">&lt;</span><span class="ident">http::Request</span><span class="op">&lt;</span><span class="ident">B</span><span class="op">&gt;</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">S2InventoryServer</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>
     <span class="kw">where</span>
         <span class="ident">T</span>: <span class="ident">S2Inventory</span>,
-        <span class="ident">B</span>: <span class="ident">Body</span> <span class="op">+</span> <span class="ident">Send</span> <span class="op">+</span> <span class="ident">Sync</span> <span class="op">+</span> <span class="lifetime">&#39;static</span>,
+        <span class="ident">B</span>: <span class="ident">Body</span> <span class="op">+</span> <span class="ident">Send</span> <span class="op">+</span> <span class="lifetime">&#39;static</span>,
         <span class="ident">B::Error</span>: <span class="ident">Into</span><span class="op">&lt;</span><span class="ident">StdError</span><span class="op">&gt;</span> <span class="op">+</span> <span class="ident">Send</span> <span class="op">+</span> <span class="lifetime">&#39;static</span>,
     {
         <span class="kw">type</span> <span class="ident">Response</span> <span class="op">=</span> <span class="ident">http::Response</span><span class="op">&lt;</span><span class="ident">tonic::body::BoxBody</span><span class="op">&gt;</span>;
-        <span class="kw">type</span> <span class="ident">Error</span> <span class="op">=</span> <span class="ident">Never</span>;
+        <span class="kw">type</span> <span class="ident">Error</span> <span class="op">=</span> <span class="ident">std::convert::Infallible</span>;
         <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span>, <span class="ident"><span class="self">Self</span>::Error</span><span class="op">&gt;</span>;
-        <span class="kw">fn</span> <span class="ident">poll_ready</span>(<span class="kw-2">&amp;mut</span> <span class="self">self</span>, <span class="ident">_cx</span>: <span class="kw-2">&amp;mut</span> <span class="ident">Context</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>) -&gt; <span class="ident">Poll</span><span class="op">&lt;</span><span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident"><span class="self">Self</span>::Error</span><span class="op">&gt;</span><span class="op">&gt;</span> {
+        <span class="kw">fn</span> <span class="ident">poll_ready</span>(
+            <span class="kw-2">&amp;mut</span> <span class="self">self</span>,
+            <span class="ident">_cx</span>: <span class="kw-2">&amp;mut</span> <span class="ident">Context</span><span class="op">&lt;</span><span class="lifetime">&#39;_</span><span class="op">&gt;</span>,
+        ) -&gt; <span class="ident">Poll</span><span class="op">&lt;</span><span class="prelude-ty">Result</span><span class="op">&lt;</span>(), <span class="ident"><span class="self">Self</span>::Error</span><span class="op">&gt;</span><span class="op">&gt;</span> {
             <span class="ident">Poll::Ready</span>(<span class="prelude-val">Ok</span>(()))
         }
         <span class="kw">fn</span> <span class="ident">call</span>(<span class="kw-2">&amp;mut</span> <span class="self">self</span>, <span class="ident">req</span>: <span class="ident">http::Request</span><span class="op">&lt;</span><span class="ident">B</span><span class="op">&gt;</span>) -&gt; <span class="ident"><span class="self">Self</span>::Future</span> {
@@ -1079,16 +1320,24 @@
             <span class="kw">match</span> <span class="ident">req</span>.<span class="ident">uri</span>().<span class="ident">path</span>() {
                 <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/QueryProductFulfillableInventory&quot;</span> =&gt; {
                     <span class="attribute">#[<span class="ident">allow</span>(<span class="ident">non_camel_case_types</span>)]</span>
-                    <span class="kw">struct</span> <span class="ident">QueryProductFulfillableInventorySvc</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>(<span class="kw">pub</span> <span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>);
-                    <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>
-                        <span class="ident">tonic::server::UnaryService</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryRequest</span><span class="op">&gt;</span>
-                        <span class="kw">for</span> <span class="ident">QueryProductFulfillableInventorySvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>
-                    {
+                    <span class="kw">struct</span> <span class="ident">QueryProductFulfillableInventorySvc</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>(
+                        <span class="kw">pub</span> <span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>,
+                    );
+                    <span class="kw">impl</span><span class="op">&lt;</span>
+                        <span class="ident">T</span>: <span class="ident">S2Inventory</span>,
+                    <span class="op">&gt;</span> <span class="ident">tonic::server::UnaryService</span><span class="op">&lt;</span>
+                        <span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryRequest</span>,
+                    <span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">QueryProductFulfillableInventorySvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
                         <span class="kw">type</span> <span class="ident">Response</span> <span class="op">=</span> <span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryReply</span>;
-                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span>;
+                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span>
+                            <span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span><span class="op">&gt;</span>,
+                            <span class="ident">tonic::Status</span>,
+                        <span class="op">&gt;</span>;
                         <span class="kw">fn</span> <span class="ident">call</span>(
                             <span class="kw-2">&amp;mut</span> <span class="self">self</span>,
-                            <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryRequest</span><span class="op">&gt;</span>,
+                            <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span>
+                                <span class="ident"><span class="kw">super</span>::QueryProductFulfillableInventoryRequest</span>,
+                            <span class="op">&gt;</span>,
                         ) -&gt; <span class="ident"><span class="self">Self</span>::Future</span> {
                             <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="number">0</span>.<span class="ident">clone</span>();
                             <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span> <span class="kw">async</span> <span class="kw">move</span> {
@@ -1104,10 +1353,11 @@
                         <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">0</span>;
                         <span class="kw">let</span> <span class="ident">method</span> <span class="op">=</span> <span class="ident">QueryProductFulfillableInventorySvc</span>(<span class="ident">inner</span>);
                         <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic::codec::ProstCodec::default</span>();
-                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="ident">tonic::server::Grpc::new</span>(<span class="ident">codec</span>).<span class="ident">apply_compression_config</span>(
-                            <span class="ident">accept_compression_encodings</span>,
-                            <span class="ident">send_compression_encodings</span>,
-                        );
+                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="ident">tonic::server::Grpc::new</span>(<span class="ident">codec</span>)
+                            .<span class="ident">apply_compression_config</span>(
+                                <span class="ident">accept_compression_encodings</span>,
+                                <span class="ident">send_compression_encodings</span>,
+                            );
                         <span class="kw">let</span> <span class="ident">res</span> <span class="op">=</span> <span class="ident">grpc</span>.<span class="ident">unary</span>(<span class="ident">method</span>, <span class="ident">req</span>).<span class="kw">await</span>;
                         <span class="prelude-val">Ok</span>(<span class="ident">res</span>)
                     };
@@ -1116,19 +1366,25 @@
                 <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/ImportFbaInventoryItems&quot;</span> =&gt; {
                     <span class="attribute">#[<span class="ident">allow</span>(<span class="ident">non_camel_case_types</span>)]</span>
                     <span class="kw">struct</span> <span class="ident">ImportFbaInventoryItemsSvc</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>(<span class="kw">pub</span> <span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>);
-                    <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>
-                        <span class="ident">tonic::server::UnaryService</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::ImportFbaInventoryItemsRequest</span><span class="op">&gt;</span>
-                        <span class="kw">for</span> <span class="ident">ImportFbaInventoryItemsSvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>
-                    {
+                    <span class="kw">impl</span><span class="op">&lt;</span>
+                        <span class="ident">T</span>: <span class="ident">S2Inventory</span>,
+                    <span class="op">&gt;</span> <span class="ident">tonic::server::UnaryService</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::ImportFbaInventoryItemsRequest</span><span class="op">&gt;</span>
+                    <span class="kw">for</span> <span class="ident">ImportFbaInventoryItemsSvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
                         <span class="kw">type</span> <span class="ident">Response</span> <span class="op">=</span> ();
-                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span>;
+                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span>
+                            <span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span><span class="op">&gt;</span>,
+                            <span class="ident">tonic::Status</span>,
+                        <span class="op">&gt;</span>;
                         <span class="kw">fn</span> <span class="ident">call</span>(
                             <span class="kw-2">&amp;mut</span> <span class="self">self</span>,
-                            <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::ImportFbaInventoryItemsRequest</span><span class="op">&gt;</span>,
+                            <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span>
+                                <span class="ident"><span class="kw">super</span>::ImportFbaInventoryItemsRequest</span>,
+                            <span class="op">&gt;</span>,
                         ) -&gt; <span class="ident"><span class="self">Self</span>::Future</span> {
                             <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="number">0</span>.<span class="ident">clone</span>();
-                            <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span>
-                                <span class="kw">async</span> <span class="kw">move</span> { (<span class="kw-2">*</span><span class="ident">inner</span>).<span class="ident">import_fba_inventory_items</span>(<span class="ident">request</span>).<span class="kw">await</span> };
+                            <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span> <span class="kw">async</span> <span class="kw">move</span> {
+                                (<span class="kw-2">*</span><span class="ident">inner</span>).<span class="ident">import_fba_inventory_items</span>(<span class="ident">request</span>).<span class="kw">await</span>
+                            };
                             <span class="ident">Box::pin</span>(<span class="ident">fut</span>)
                         }
                     }
@@ -1139,10 +1395,11 @@
                         <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">0</span>;
                         <span class="kw">let</span> <span class="ident">method</span> <span class="op">=</span> <span class="ident">ImportFbaInventoryItemsSvc</span>(<span class="ident">inner</span>);
                         <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic::codec::ProstCodec::default</span>();
-                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="ident">tonic::server::Grpc::new</span>(<span class="ident">codec</span>).<span class="ident">apply_compression_config</span>(
-                            <span class="ident">accept_compression_encodings</span>,
-                            <span class="ident">send_compression_encodings</span>,
-                        );
+                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="ident">tonic::server::Grpc::new</span>(<span class="ident">codec</span>)
+                            .<span class="ident">apply_compression_config</span>(
+                                <span class="ident">accept_compression_encodings</span>,
+                                <span class="ident">send_compression_encodings</span>,
+                            );
                         <span class="kw">let</span> <span class="ident">res</span> <span class="op">=</span> <span class="ident">grpc</span>.<span class="ident">unary</span>(<span class="ident">method</span>, <span class="ident">req</span>).<span class="kw">await</span>;
                         <span class="prelude-val">Ok</span>(<span class="ident">res</span>)
                     };
@@ -1151,19 +1408,26 @@
                 <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/QueryFbaWarehouseProducts&quot;</span> =&gt; {
                     <span class="attribute">#[<span class="ident">allow</span>(<span class="ident">non_camel_case_types</span>)]</span>
                     <span class="kw">struct</span> <span class="ident">QueryFbaWarehouseProductsSvc</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>(<span class="kw">pub</span> <span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>);
-                    <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>
-                        <span class="ident">tonic::server::UnaryService</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsRequest</span><span class="op">&gt;</span>
-                        <span class="kw">for</span> <span class="ident">QueryFbaWarehouseProductsSvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>
-                    {
+                    <span class="kw">impl</span><span class="op">&lt;</span>
+                        <span class="ident">T</span>: <span class="ident">S2Inventory</span>,
+                    <span class="op">&gt;</span> <span class="ident">tonic::server::UnaryService</span><span class="op">&lt;</span>
+                        <span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsRequest</span>,
+                    <span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">QueryFbaWarehouseProductsSvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
                         <span class="kw">type</span> <span class="ident">Response</span> <span class="op">=</span> <span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsReply</span>;
-                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span>;
+                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span>
+                            <span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span><span class="op">&gt;</span>,
+                            <span class="ident">tonic::Status</span>,
+                        <span class="op">&gt;</span>;
                         <span class="kw">fn</span> <span class="ident">call</span>(
                             <span class="kw-2">&amp;mut</span> <span class="self">self</span>,
-                            <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsRequest</span><span class="op">&gt;</span>,
+                            <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span>
+                                <span class="ident"><span class="kw">super</span>::QueryFbaWarehouseProductsRequest</span>,
+                            <span class="op">&gt;</span>,
                         ) -&gt; <span class="ident"><span class="self">Self</span>::Future</span> {
                             <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="number">0</span>.<span class="ident">clone</span>();
-                            <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span>
-                                <span class="kw">async</span> <span class="kw">move</span> { (<span class="kw-2">*</span><span class="ident">inner</span>).<span class="ident">query_fba_warehouse_products</span>(<span class="ident">request</span>).<span class="kw">await</span> };
+                            <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span> <span class="kw">async</span> <span class="kw">move</span> {
+                                (<span class="kw-2">*</span><span class="ident">inner</span>).<span class="ident">query_fba_warehouse_products</span>(<span class="ident">request</span>).<span class="kw">await</span>
+                            };
                             <span class="ident">Box::pin</span>(<span class="ident">fut</span>)
                         }
                     }
@@ -1174,10 +1438,11 @@
                         <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">0</span>;
                         <span class="kw">let</span> <span class="ident">method</span> <span class="op">=</span> <span class="ident">QueryFbaWarehouseProductsSvc</span>(<span class="ident">inner</span>);
                         <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic::codec::ProstCodec::default</span>();
-                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="ident">tonic::server::Grpc::new</span>(<span class="ident">codec</span>).<span class="ident">apply_compression_config</span>(
-                            <span class="ident">accept_compression_encodings</span>,
-                            <span class="ident">send_compression_encodings</span>,
-                        );
+                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="ident">tonic::server::Grpc::new</span>(<span class="ident">codec</span>)
+                            .<span class="ident">apply_compression_config</span>(
+                                <span class="ident">accept_compression_encodings</span>,
+                                <span class="ident">send_compression_encodings</span>,
+                            );
                         <span class="kw">let</span> <span class="ident">res</span> <span class="op">=</span> <span class="ident">grpc</span>.<span class="ident">unary</span>(<span class="ident">method</span>, <span class="ident">req</span>).<span class="kw">await</span>;
                         <span class="prelude-val">Ok</span>(<span class="ident">res</span>)
                     };
@@ -1186,19 +1451,25 @@
                 <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/QueryWarehouseEventsSum&quot;</span> =&gt; {
                     <span class="attribute">#[<span class="ident">allow</span>(<span class="ident">non_camel_case_types</span>)]</span>
                     <span class="kw">struct</span> <span class="ident">QueryWarehouseEventsSumSvc</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>(<span class="kw">pub</span> <span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>);
-                    <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>
-                        <span class="ident">tonic::server::UnaryService</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryWarehouseEventsSumRequest</span><span class="op">&gt;</span>
-                        <span class="kw">for</span> <span class="ident">QueryWarehouseEventsSumSvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>
-                    {
+                    <span class="kw">impl</span><span class="op">&lt;</span>
+                        <span class="ident">T</span>: <span class="ident">S2Inventory</span>,
+                    <span class="op">&gt;</span> <span class="ident">tonic::server::UnaryService</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryWarehouseEventsSumRequest</span><span class="op">&gt;</span>
+                    <span class="kw">for</span> <span class="ident">QueryWarehouseEventsSumSvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
                         <span class="kw">type</span> <span class="ident">Response</span> <span class="op">=</span> <span class="ident"><span class="kw">super</span>::QueryWarehouseEventsSumReply</span>;
-                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span>;
+                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span>
+                            <span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span><span class="op">&gt;</span>,
+                            <span class="ident">tonic::Status</span>,
+                        <span class="op">&gt;</span>;
                         <span class="kw">fn</span> <span class="ident">call</span>(
                             <span class="kw-2">&amp;mut</span> <span class="self">self</span>,
-                            <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span><span class="ident"><span class="kw">super</span>::QueryWarehouseEventsSumRequest</span><span class="op">&gt;</span>,
+                            <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span>
+                                <span class="ident"><span class="kw">super</span>::QueryWarehouseEventsSumRequest</span>,
+                            <span class="op">&gt;</span>,
                         ) -&gt; <span class="ident"><span class="self">Self</span>::Future</span> {
                             <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="number">0</span>.<span class="ident">clone</span>();
-                            <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span>
-                                <span class="kw">async</span> <span class="kw">move</span> { (<span class="kw-2">*</span><span class="ident">inner</span>).<span class="ident">query_warehouse_events_sum</span>(<span class="ident">request</span>).<span class="kw">await</span> };
+                            <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span> <span class="kw">async</span> <span class="kw">move</span> {
+                                (<span class="kw-2">*</span><span class="ident">inner</span>).<span class="ident">query_warehouse_events_sum</span>(<span class="ident">request</span>).<span class="kw">await</span>
+                            };
                             <span class="ident">Box::pin</span>(<span class="ident">fut</span>)
                         }
                     }
@@ -1209,10 +1480,11 @@
                         <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">0</span>;
                         <span class="kw">let</span> <span class="ident">method</span> <span class="op">=</span> <span class="ident">QueryWarehouseEventsSumSvc</span>(<span class="ident">inner</span>);
                         <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic::codec::ProstCodec::default</span>();
-                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="ident">tonic::server::Grpc::new</span>(<span class="ident">codec</span>).<span class="ident">apply_compression_config</span>(
-                            <span class="ident">accept_compression_encodings</span>,
-                            <span class="ident">send_compression_encodings</span>,
-                        );
+                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="ident">tonic::server::Grpc::new</span>(<span class="ident">codec</span>)
+                            .<span class="ident">apply_compression_config</span>(
+                                <span class="ident">accept_compression_encodings</span>,
+                                <span class="ident">send_compression_encodings</span>,
+                            );
                         <span class="kw">let</span> <span class="ident">res</span> <span class="op">=</span> <span class="ident">grpc</span>.<span class="ident">unary</span>(<span class="ident">method</span>, <span class="ident">req</span>).<span class="kw">await</span>;
                         <span class="prelude-val">Ok</span>(<span class="ident">res</span>)
                     };
@@ -1221,13 +1493,18 @@
                 <span class="string">&quot;/ventmere.s2.core.inventory.S2Inventory/GetInventoryWarehouses&quot;</span> =&gt; {
                     <span class="attribute">#[<span class="ident">allow</span>(<span class="ident">non_camel_case_types</span>)]</span>
                     <span class="kw">struct</span> <span class="ident">GetInventoryWarehousesSvc</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span>(<span class="kw">pub</span> <span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>);
-                    <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span> <span class="ident">tonic::server::UnaryService</span><span class="op">&lt;</span>()<span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">GetInventoryWarehousesSvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
+                    <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span> <span class="ident">tonic::server::UnaryService</span><span class="op">&lt;</span>()<span class="op">&gt;</span>
+                    <span class="kw">for</span> <span class="ident">GetInventoryWarehousesSvc</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
                         <span class="kw">type</span> <span class="ident">Response</span> <span class="op">=</span> <span class="ident"><span class="kw">super</span>::GetInventoryWarehousesReply</span>;
-                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span><span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span><span class="op">&gt;</span>, <span class="ident">tonic::Status</span><span class="op">&gt;</span>;
+                        <span class="kw">type</span> <span class="ident">Future</span> <span class="op">=</span> <span class="ident">BoxFuture</span><span class="op">&lt;</span>
+                            <span class="ident">tonic::Response</span><span class="op">&lt;</span><span class="ident"><span class="self">Self</span>::Response</span><span class="op">&gt;</span>,
+                            <span class="ident">tonic::Status</span>,
+                        <span class="op">&gt;</span>;
                         <span class="kw">fn</span> <span class="ident">call</span>(<span class="kw-2">&amp;mut</span> <span class="self">self</span>, <span class="ident">request</span>: <span class="ident">tonic::Request</span><span class="op">&lt;</span>()<span class="op">&gt;</span>) -&gt; <span class="ident"><span class="self">Self</span>::Future</span> {
                             <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="self">self</span>.<span class="number">0</span>.<span class="ident">clone</span>();
-                            <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span>
-                                <span class="kw">async</span> <span class="kw">move</span> { (<span class="kw-2">*</span><span class="ident">inner</span>).<span class="ident">get_inventory_warehouses</span>(<span class="ident">request</span>).<span class="kw">await</span> };
+                            <span class="kw">let</span> <span class="ident">fut</span> <span class="op">=</span> <span class="kw">async</span> <span class="kw">move</span> {
+                                (<span class="kw-2">*</span><span class="ident">inner</span>).<span class="ident">get_inventory_warehouses</span>(<span class="ident">request</span>).<span class="kw">await</span>
+                            };
                             <span class="ident">Box::pin</span>(<span class="ident">fut</span>)
                         }
                     }
@@ -1238,23 +1515,28 @@
                         <span class="kw">let</span> <span class="ident">inner</span> <span class="op">=</span> <span class="ident">inner</span>.<span class="number">0</span>;
                         <span class="kw">let</span> <span class="ident">method</span> <span class="op">=</span> <span class="ident">GetInventoryWarehousesSvc</span>(<span class="ident">inner</span>);
                         <span class="kw">let</span> <span class="ident">codec</span> <span class="op">=</span> <span class="ident">tonic::codec::ProstCodec::default</span>();
-                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="ident">tonic::server::Grpc::new</span>(<span class="ident">codec</span>).<span class="ident">apply_compression_config</span>(
-                            <span class="ident">accept_compression_encodings</span>,
-                            <span class="ident">send_compression_encodings</span>,
-                        );
+                        <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">grpc</span> <span class="op">=</span> <span class="ident">tonic::server::Grpc::new</span>(<span class="ident">codec</span>)
+                            .<span class="ident">apply_compression_config</span>(
+                                <span class="ident">accept_compression_encodings</span>,
+                                <span class="ident">send_compression_encodings</span>,
+                            );
                         <span class="kw">let</span> <span class="ident">res</span> <span class="op">=</span> <span class="ident">grpc</span>.<span class="ident">unary</span>(<span class="ident">method</span>, <span class="ident">req</span>).<span class="kw">await</span>;
                         <span class="prelude-val">Ok</span>(<span class="ident">res</span>)
                     };
                     <span class="ident">Box::pin</span>(<span class="ident">fut</span>)
                 }
-                <span class="kw">_</span> =&gt; <span class="ident">Box::pin</span>(<span class="kw">async</span> <span class="kw">move</span> {
-                    <span class="prelude-val">Ok</span>(<span class="ident">http::Response::builder</span>()
-                        .<span class="ident">status</span>(<span class="number">200</span>)
-                        .<span class="ident">header</span>(<span class="string">&quot;grpc-status&quot;</span>, <span class="string">&quot;12&quot;</span>)
-                        .<span class="ident">header</span>(<span class="string">&quot;content-type&quot;</span>, <span class="string">&quot;application/grpc&quot;</span>)
-                        .<span class="ident">body</span>(<span class="ident">empty_body</span>())
-                        .<span class="ident">unwrap</span>())
-                }),
+                <span class="kw">_</span> =&gt; {
+                    <span class="ident">Box::pin</span>(<span class="kw">async</span> <span class="kw">move</span> {
+                        <span class="prelude-val">Ok</span>(
+                            <span class="ident">http::Response::builder</span>()
+                                .<span class="ident">status</span>(<span class="number">200</span>)
+                                .<span class="ident">header</span>(<span class="string">&quot;grpc-status&quot;</span>, <span class="string">&quot;12&quot;</span>)
+                                .<span class="ident">header</span>(<span class="string">&quot;content-type&quot;</span>, <span class="string">&quot;application/grpc&quot;</span>)
+                                .<span class="ident">body</span>(<span class="ident">empty_body</span>())
+                                .<span class="ident">unwrap</span>(),
+                        )
+                    })
+                }
             }
         }
     }
@@ -1278,7 +1560,7 @@
             <span class="macro">write!</span>(<span class="ident">f</span>, <span class="string">&quot;{:?}&quot;</span>, <span class="self">self</span>.<span class="number">0</span>)
         }
     }
-    <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span> <span class="ident">tonic::transport::NamedService</span> <span class="kw">for</span> <span class="ident">S2InventoryServer</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
+    <span class="kw">impl</span><span class="op">&lt;</span><span class="ident">T</span>: <span class="ident">S2Inventory</span><span class="op">&gt;</span> <span class="ident">tonic::server::NamedService</span> <span class="kw">for</span> <span class="ident">S2InventoryServer</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
         <span class="kw">const</span> <span class="ident">NAME</span>: <span class="kw-2">&amp;</span><span class="lifetime">&#39;static</span> <span class="ident">str</span> <span class="op">=</span> <span class="string">&quot;ventmere.s2.core.inventory.S2Inventory&quot;</span>;
     }
 }
