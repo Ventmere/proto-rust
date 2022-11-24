@@ -136,6 +136,13 @@
 <span id="136">136</span>
 <span id="137">137</span>
 <span id="138">138</span>
+<span id="139">139</span>
+<span id="140">140</span>
+<span id="141">141</span>
+<span id="142">142</span>
+<span id="143">143</span>
+<span id="144">144</span>
+<span id="145">145</span>
 </pre><pre class="rust"><code><span class="kw">pub use </span>anyhow::{Error, <span class="prelude-ty">Result</span>};
 <span class="kw">pub use </span>tonic::transport::{Channel, Endpoint};
 
@@ -173,6 +180,10 @@
                 <span class="macro">tonic::include_proto!</span>(<span class="string">&quot;ventmere.s2.core.channel_account&quot;</span>);
             }
 
+            <span class="kw">pub mod </span>settings {
+                <span class="macro">tonic::include_proto!</span>(<span class="string">&quot;ventmere.s2.core.settings&quot;</span>);
+            }
+
             <span class="attribute">#[cfg(feature = <span class="string">&quot;client&quot;</span>)]
             </span><span class="kw">pub mod </span>client {
                 <span class="kw">use super</span>::<span class="kw-2">*</span>;
@@ -186,6 +197,7 @@
                     <span class="kw">pub </span>inventory: inventory::s2_inventory_client::S2InventoryClient&lt;Channel&gt;,
                     <span class="kw">pub </span>order: order::s2_order_client::S2OrderClient&lt;Channel&gt;,
                     <span class="kw">pub </span>channel_account: channel_account::s2_channel_account_client::S2ChannelAccountClient&lt;Channel&gt;,
+                    <span class="kw">pub </span>settings: settings::s2_settings_client::S2SettingsClient&lt;Channel&gt;,
                 }
 
                 <span class="kw">impl </span>S2CoreGrpcClient {
@@ -199,6 +211,7 @@
                             inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
                             order: order::s2_order_client::S2OrderClient::new(channel.clone()),
                             channel_account: channel_account::s2_channel_account_client::S2ChannelAccountClient::new(channel.clone()),
+                            settings: settings::s2_settings_client::S2SettingsClient::new(channel.clone()),
                         })
                     }
 
@@ -212,6 +225,7 @@
                             inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
                             order: order::s2_order_client::S2OrderClient::new(channel.clone()),
                             channel_account: channel_account::s2_channel_account_client::S2ChannelAccountClient::new(channel.clone()),
+                            settings: settings::s2_settings_client::S2SettingsClient::new(channel.clone()),
                         })
                     }
                 }

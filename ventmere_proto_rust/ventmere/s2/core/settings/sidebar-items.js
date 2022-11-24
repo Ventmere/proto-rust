@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":[["s2_settings_client","Generated client implementations."],["s2_settings_server","Generated server implementations."]],"struct":[["FulfillmentWarehouseMapping",""],["GetFulfillmentWarehouseMappingsReply",""]]};

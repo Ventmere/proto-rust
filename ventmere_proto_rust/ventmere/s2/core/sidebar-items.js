@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"mod":[["auth",""],["brand",""],["channel_account",""],["client",""],["inbound_shipment",""],["inventory",""],["order",""],["product",""]]};
+window.SIDEBAR_ITEMS = {"mod":[["auth",""],["brand",""],["channel_account",""],["client",""],["inbound_shipment",""],["inventory",""],["order",""],["product",""],["settings",""]]};
