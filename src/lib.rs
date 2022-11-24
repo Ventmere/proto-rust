@@ -35,6 +35,10 @@ pub mod ventmere {
                 tonic::include_proto!("ventmere.s2.core.channel_account");
             }
 
+            pub mod settings {
+                tonic::include_proto!("ventmere.s2.core.settings");
+            }
+
             #[cfg(feature = "client")]
             pub mod client {
                 use super::*;
@@ -48,6 +52,7 @@ pub mod ventmere {
                     pub inventory: inventory::s2_inventory_client::S2InventoryClient<Channel>,
                     pub order: order::s2_order_client::S2OrderClient<Channel>,
                     pub channel_account: channel_account::s2_channel_account_client::S2ChannelAccountClient<Channel>,
+                    pub settings: settings::s2_settings_client::S2SettingsClient<Channel>,
                 }
 
                 impl S2CoreGrpcClient {
@@ -61,6 +66,7 @@ pub mod ventmere {
                             inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
                             order: order::s2_order_client::S2OrderClient::new(channel.clone()),
                             channel_account: channel_account::s2_channel_account_client::S2ChannelAccountClient::new(channel.clone()),
+                            settings: settings::s2_settings_client::S2SettingsClient::new(channel.clone()),
                         })
                     }
 
@@ -74,6 +80,7 @@ pub mod ventmere {
                             inventory: inventory::s2_inventory_client::S2InventoryClient::new(channel.clone()),
                             order: order::s2_order_client::S2OrderClient::new(channel.clone()),
                             channel_account: channel_account::s2_channel_account_client::S2ChannelAccountClient::new(channel.clone()),
+                            settings: settings::s2_settings_client::S2SettingsClient::new(channel.clone()),
                         })
                     }
                 }
